@@ -125,7 +125,7 @@
 
 /* Animated gradient background */
 .animated-gradient {
-  background: linear-gradient(-45deg, #0A2342, #126E82, #2CA6A4, #81C3D7);
+  background: linear-gradient(-45deg, #1a1d20, #141616, #070707, #242424);
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
 }
@@ -144,11 +144,11 @@
 
 /* Futuristic circuit board pattern */
 .circuit-pattern {
-  background-color: #0A2342;
+  background-color: black;
   background-image: 
-    radial-gradient(#2CA6A4 2px, transparent 2px),
-    linear-gradient(#126E82 1px, transparent 1px),
-    linear-gradient(90deg, #126E82 1px, transparent 1px);
+    radial-gradient(#354141 2px, transparent 2px),
+    linear-gradient(#0e0f0f 1px, transparent 1px),
+    linear-gradient(90deg, #080808 1px, transparent 1px);
   background-size: 20px 20px, 10px 10px, 10px 10px;
   background-position: 0 0, 10px 10px, 10px 10px;
   background-attachment: fixed;

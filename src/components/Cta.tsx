@@ -21,8 +21,7 @@ const Cta = () => {
             </h2>
             
             <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
-              Whether you're an institution looking to tokenize assets, a developer building on our platform,
-              or an investor seeking stable returns, NEXR Blockchain provides the infrastructure for the future.
+             Institutions or Businesses seeking to leverage on blockchain service, an investor or citizens seeking stable returns, NEXR Blockchain provides the grass-root exchange of the future.
             </p>
             
             <form className="max-w-md mx-auto opacity-0 animate-fade-in-delay-3">
@@ -41,7 +40,7 @@ const Cta = () => {
                 </button>
               </div>
               <p className="text-sm text-gray-500">
-                Join our waitlist to be among the first to access the NEXR platform.
+                Subscribe to our newsletter to be among the first to harness the new updates to NEXR platform.
               </p>
             </form>
           </div>

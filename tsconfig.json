@@ -9,6 +9,9 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react",
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "skipLibCheck": true,
