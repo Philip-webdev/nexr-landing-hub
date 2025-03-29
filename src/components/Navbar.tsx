@@ -32,15 +32,15 @@ const Navbar = () => {
     >
       <div className="nexr-container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="font-display text-2xl font-bold text-nexr-white">NEXR<span className="text-[RGB(0,131,208)]">Bank</span></div>
+          <div className="font-display text-2xl font-bold text-white">NEXR<span className="text-[RGB(0,131,208)]">Bank</span></div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="font-medium text-nexr-dark-white hover:text-nexr-blue transition-colors">
+          <a href="#features" className="font-medium text-white hover:text-nexr-blue transition-colors">
             Features
           </a>
-          <a href="#about" className="font-medium text-nexr-white hover:text-nexr-blue transition-colors">
+          <a href="#about" className="font-medium text-white hover:text-nexr-blue transition-colors">
             About
           </a>
           <a href="#contact" className="button-primary">
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-nexr-dark-blue focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
           onClick={toggleMobileMenu}
           aria-label="Toggle menu"
         >

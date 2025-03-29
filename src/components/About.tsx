@@ -12,7 +12,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden bg-gradient-hero text-white bg-black">
+    <section id="about" className="section-padding relative overflow-hidden bg-black text-white">
       {/* Background pattern */}
       <div className="absolute inset-0 circuit-pattern -z-0"></div>
       
@@ -55,7 +55,7 @@ const About = () => {
                 <div className="relative h-full flex flex-col justify-center items-center">
                   <div className="w-48 h-48 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center animate-pulse-slow">
                     <div className="text-center">
-                      <h3 className="font-display text-2xl font-bold mb-1">NEXR</h3>
+                      <h3 className="font-display text-2xl font-bold mb-1 text-white">NEXR</h3>
                       <p className="text-sm text-white/70">Blockchain</p>
                     </div>
                   </div>
