@@ -12,7 +12,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden bg-gradient-hero text-white">
+    <section id="about" className="section-padding relative overflow-hidden bg-gradient-hero text-white bg-black">
       {/* Background pattern */}
       <div className="absolute inset-0 circuit-pattern -z-0"></div>
       

@@ -28,7 +28,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="section-padding bg-nexr-off-white relative overflow-hidden">
+    <section id="features" className="section-padding bg-nexr-black  relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-nexr-light-teal/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-nexr-teal/10 rounded-full filter blur-3xl"></div>

@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Cta = () => {
   return (
-    <section id="contact" className="section-padding bg-nexr-off-white relative overflow-hidden">
+    <section id="contact" className="section-padding bg-nexr-black relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-nexr-teal/5 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-1/3 h-1/3 bg-nexr-light-teal/10 rounded-full filter blur-3xl"></div>
