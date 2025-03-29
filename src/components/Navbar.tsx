@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <div className="nexr-container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="font-display text-2xl font-bold text-nexr-white">NEXR<span style="color: RGB(0, 131, 208);">Bank</span></div>
+          <div className="font-display text-2xl font-bold text-nexr-white">NEXR<span className="text-[RGB(0,131,208)]">Bank</span></div>
         </Link>
 
         {/* Desktop Navigation */}
