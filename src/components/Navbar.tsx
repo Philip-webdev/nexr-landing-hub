@@ -60,18 +60,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-white/90 backdrop-blur-lg border-b border-white/30 shadow-lg py-4 animate-fade-in">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-black/90 backdrop-blur-lg border-b border-white/30 shadow-lg py-4 animate-fade-in">
           <div className="nexr-container flex flex-col gap-4">
             <a
               href="#features"
-              className="font-medium text-nexr-dark-blue hover:text-nexr-blue transition-colors px-4 py-2"
+              className="font-medium text-white hover:text-nexr-blue transition-colors px-4 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </a>
             <a
               href="#about"
-              className="font-medium text-nexr-dark-blue hover:text-nexr-blue transition-colors px-4 py-2"
+              className="font-medium text-white hover:text-nexr-blue transition-colors px-4 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About

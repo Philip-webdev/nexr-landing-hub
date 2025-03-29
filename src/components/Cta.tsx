@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Cta = () => {
   return (
-    <section id="contact" className="section-padding bg-nexr-black relative overflow-hidden">
+    <section id="contact" className="section-padding bg-black relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-nexr-teal/5 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-1/3 h-1/3 bg-nexr-light-teal/10 rounded-full filter blur-3xl"></div>
@@ -16,11 +16,11 @@ const Cta = () => {
               <p className="text-sm font-medium text-nexr-teal">Join the revolution</p>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-bold text-nexr-dark-blue mb-6 opacity-0 animate-fade-in-delay-1">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 opacity-0 animate-fade-in-delay-1">
               Ready to Transform Your Digital Asset Strategy?
             </h2>
             
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in-delay-2">
              Institutions or Businesses seeking to leverage on blockchain service, an investor or citizens seeking stable returns, NEXR Blockchain provides the grass-root exchange of the future.
             </p>
             
@@ -39,7 +39,7 @@ const Cta = () => {
                   Get Early Access <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                 </button>
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-300">
                 Subscribe to our newsletter to be among the first to harness the new updates to NEXR platform.
               </p>
             </form>

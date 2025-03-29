@@ -28,7 +28,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="section-padding bg-nexr-black  relative overflow-hidden">
+    <section id="features" className="section-padding bg-black relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-nexr-light-teal/10 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-nexr-teal/10 rounded-full filter blur-3xl"></div>
@@ -36,14 +36,14 @@ const Features = () => {
       <div className="nexr-container relative">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-2 rounded-full bg-nexr-dark-blue/5 mb-4 opacity-0 animate-fade-in">
-            <p className="text-sm font-medium text-nexr-dark-blue">Core Technologies</p>
+            <p className="text-sm font-medium text-white">Core Technologies</p>
           </div>
           
-          <h2 className="text-3xl md:text-4xl font-bold text-nexr-dark-blue mb-6 opacity-0 animate-fade-in-delay-1">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 opacity-0 animate-fade-in-delay-1">
             Bridging Digital Innovation with Real-World Value
           </h2>
           
-          <p className="text-lg text-gray-600 opacity-0 animate-fade-in-delay-2">
+          <p className="text-lg text-gray-300 opacity-0 animate-fade-in-delay-2">
             Our ecosystem is built on three core pillars that work together to create a more inclusive, 
             stable, and accessible financial future.
           </p>
@@ -56,9 +56,9 @@ const Features = () => {
                 {feature.icon}
               </div>
               
-              <h3 className="text-xl font-bold text-nexr-dark-blue mb-3">{feature.title}</h3>
+              <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
               
-              <p className="text-gray-600 mb-6">{feature.description}</p>
+              <p className="text-gray-300 mb-6">{feature.description}</p>
               
               <a href="#" className="mt-auto text-nexr-teal font-medium inline-flex items-center gap-2 group">
                 Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />

@@ -13,8 +13,8 @@ const About = () => {
 
   return (
     <section id="about" className="section-padding relative overflow-hidden bg-black text-white">
-      {/* Background pattern */}
-      <div className="absolute inset-0 circuit-pattern -z-0"></div>
+      {/* Background pattern with transparency */}
+      <div className="absolute inset-0 circuit-pattern opacity-10 -z-0"></div>
       
       <div className="nexr-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -49,7 +49,7 @@ const About = () => {
           <div className="order-1 lg:order-2 opacity-0 animate-fade-in">
             <div className="glass-card p-6 backdrop-blur-lg bg-white/5 border border-white/20">
               <div className="aspect-square rounded-xl bg-gradient-to-br from-nexr-teal/20 to-nexr-blue/20 p-6 relative overflow-hidden">
-                <div className="absolute inset-0 circuit-pattern opacity-30"></div>
+                <div className="absolute inset-0 circuit-pattern opacity-10"></div>
                 
                 {/* Visualization elements */}
                 <div className="relative h-full flex flex-col justify-center items-center">
