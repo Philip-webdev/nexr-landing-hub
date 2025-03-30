@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight opacity-0 animate-fade-in-delay-1">
-              The Future of <span className="text-gradient">Blockchain Assets</span> is Here
+              The Future of <span className="text-[RGB(0,131,208)]">Blockchain Assets</span> is Here
             </h1>
             
             <p className="text-lg md:text-xl opacity-0 animate-fade-in-delay-2">
@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
-              <a href="#contact" className="button-primary flex items-center justify-center gap-2 group">
+              <a href="https://nexr-pi.vercel.app/" className="button-primary flex items-center justify-center gap-2 group">
                 Get Started <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a href="#features" className="button-outline flex items-center justify-center">
