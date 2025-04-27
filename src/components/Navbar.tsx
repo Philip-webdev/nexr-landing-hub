@@ -32,18 +32,18 @@ const Navbar = () => {
     >
       <div className="nexr-container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="font-display text-2xl font-bold text-white">NEXR<span className="text-[RGB(0,131,208)]">Bank</span></div>
+          <div className="font-display text-2xl font-bold text-white">Nekst<span className="text-nexr-teal">Pei</span></div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#features" className="font-medium text-white hover:text-nexr-blue transition-colors">
+          <a href="#features" className="font-medium text-white hover:text-nexr-teal transition-colors">
             Features
           </a>
-          <a href="#about" className="font-medium text-white hover:text-nexr-blue transition-colors">
+          <a href="#about" className="font-medium text-white hover:text-nexr-teal transition-colors">
             About
           </a>
-          <a href="#contact" className="button-primary">
+          <a href="#contact" className="bg-nexr-teal text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-nexr-teal/80 shadow-md hover:shadow-lg">
             Get Started
           </a>
         </div>
@@ -64,21 +64,21 @@ const Navbar = () => {
           <div className="nexr-container flex flex-col gap-4">
             <a
               href="#features"
-              className="font-medium text-white hover:text-nexr-blue transition-colors px-4 py-2"
+              className="font-medium text-white hover:text-nexr-teal transition-colors px-4 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </a>
             <a
               href="#about"
-              className="font-medium text-white hover:text-nexr-blue transition-colors px-4 py-2"
+              className="font-medium text-white hover:text-nexr-teal transition-colors px-4 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
             <a
               href="#contact"
-              className="button-primary mx-4 text-center"
+              className="bg-nexr-teal text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-nexr-teal/80 shadow-md hover:shadow-lg text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Get Started

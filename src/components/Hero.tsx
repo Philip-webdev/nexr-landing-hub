@@ -26,12 +26,12 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl opacity-0 animate-fade-in-delay-2">
-              NEXR Blockchain is pioneering the bridge between digital assets and real-world value, 
+              NekstPei Blockchain is pioneering the bridge between digital assets and real-world value, 
               creating a more accessible and stable financial ecosystem.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
-              <a href="https://nexr-pi.vercel.app/" className="button-primary flex items-center justify-center gap-2 group">
+              <a href="#contact" className="button-primary flex items-center justify-center gap-2 group">
                 Get Started <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a href="#features" className="button-outline flex items-center justify-center">
@@ -56,7 +56,7 @@ const Hero = () => {
                   <div className="mt-auto">
                     <div className="h-24 rounded-xl bg-gradient-to-r from-nexr-teal/40 to-nexr-light-teal/40 p-4">
                       <div className="h-full rounded-lg bg-white/10 flex items-center justify-center">
-                        <p className="text-white font-mono text-sm">NEXR Blockchain</p>
+                        <p className="text-white font-mono text-sm">NekstPei Blockchain</p>
                       </div>
                     </div>
                   </div>

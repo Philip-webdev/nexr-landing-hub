@@ -51,7 +51,7 @@ const Features = () => {
         
         <div className="grid-feature">
           {features.map((feature) => (
-            <div key={feature.id} className={`feature-card opacity-0 ${feature.delay}`}>
+            <div key={feature.id} className={`bg-white/5 backdrop-blur-sm border border-white/20 p-6 rounded-2xl flex flex-col items-start transition-all duration-300 hover:bg-white/10 opacity-0 ${feature.delay}`}>
               <div className="p-3 rounded-xl bg-nexr-teal/10 mb-6">
                 {feature.icon}
               </div>
