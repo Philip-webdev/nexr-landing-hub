@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <div className="nexr-container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="font-display text-2xl font-bold text-white">Nekst<span className="text-nexr-teal">Pei</span></div>
+          <div className="font-display text-2xl font-bold text-white">Nekst<span className="text-[RGB(0,131,208)]">Pei</span></div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -43,7 +43,7 @@ const Navbar = () => {
           <a href="#about" className="font-medium text-white hover:text-nexr-teal transition-colors">
             About
           </a>
-          <a href="#contact" className="bg-nexr-teal text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-nexr-teal/80 shadow-md hover:shadow-lg">
+          <a href="#contact" className="text-[RGB(0,131,208)] text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-nexr-teal/80 shadow-md hover:shadow-lg">
             Get Started
           </a>
         </div>
