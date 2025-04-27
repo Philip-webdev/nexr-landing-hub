@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -30,7 +31,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
-              <a href="#contact" className="button-primary flex items-center justify-center gap-2 group">
+              <a href="#contact" className="bg-nexr-teal text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-nexr-teal/80 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group">
                 Get Started <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a href="#features" className="button-outline flex items-center justify-center">
