@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -18,7 +17,6 @@ const About = () => {
       
       <div className="nexr-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Content */}
           <div className="order-2 lg:order-1">
             <div className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 opacity-0 animate-fade-in">
               <p className="text-sm font-medium">Our Mission</p>
@@ -29,7 +27,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg mb-8 opacity-0 animate-fade-in-delay-2">
-              NEXR Blockchain is pioneering the next generation of financial infrastructure, 
+              NekstPei Blockchain is pioneering the next generation of financial infrastructure, 
               creating a seamless bridge between traditional assets and the digital economy. 
               Our technology enables the transformation of real-world assets into secure, 
               tradable digital tokens while maintaining stability through our advanced stablecoin protocols.
@@ -45,7 +43,6 @@ const About = () => {
             </div>
           </div>
           
-          {/* Visualization */}
           <div className="order-1 lg:order-2 opacity-0 animate-fade-in">
             <div className="glass-card p-6 backdrop-blur-lg bg-white/5 border border-white/20">
               <div className="aspect-square rounded-xl bg-gradient-to-br from-nexr-teal/20 to-nexr-blue/20 p-6 relative overflow-hidden">
@@ -55,7 +52,7 @@ const About = () => {
                 <div className="relative h-full flex flex-col justify-center items-center">
                   <div className="w-48 h-48 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center animate-pulse-slow">
                     <div className="text-center">
-                      <h3 className="font-display text-2xl font-bold mb-1 text-white">NEXR</h3>
+                      <h3 className="font-display text-2xl font-bold mb-1 text-white">NekstPei</h3>
                       <p className="text-sm text-white/70">Blockchain</p>
                     </div>
                   </div>

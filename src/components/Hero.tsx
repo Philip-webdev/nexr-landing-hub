@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -26,7 +25,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl opacity-0 animate-fade-in-delay-2">
-              NEXR Blockchain is pioneering the bridge between digital assets and real-world value, 
+              NekstPei Blockchain is pioneering the bridge between digital assets and real-world value, 
               creating a more accessible and stable financial ecosystem.
             </p>
             
