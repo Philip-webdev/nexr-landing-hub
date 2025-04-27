@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
 
@@ -8,7 +7,7 @@ const Footer = () => {
       <div className="nexr-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6">NEXR</h3>
+            <h3 className="text-2xl font-bold mb-6">NekstPei</h3>
             <p className="text-gray-300 mb-6">
               The future of blockchain assets is here. Building bridges between digital innovation 
               and real-world value.
@@ -81,7 +80,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} NEXR Blockchain. All rights reserved.
+            &copy; {new Date().getFullYear()} NekstPei Blockchain. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-400 text-sm hover:text-white transition-colors">Terms</a>
