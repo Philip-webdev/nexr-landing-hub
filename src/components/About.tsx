@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 
@@ -45,35 +46,35 @@ const About = () => {
           
           <div className="order-1 lg:order-2 opacity-0 animate-fade-in">
             <div className="glass-card p-4 backdrop-blur-lg bg-white/5 border border-white/20">
-              <div className="aspect-square rounded-xl bg-black/30 p-4 relative overflow-hidden">
+              <div className="aspect-square rounded-xl bg-black/30 p-2 relative overflow-hidden">
                 <div className="absolute inset-0 circuit-pattern opacity-5"></div>
                 
                 {/* Visualization elements */}
                 <div className="relative h-full flex flex-col justify-center items-center">
-                  <div className="w-32 h-32 rounded-full bg-white/5 backdrop-blur-md border border-white/20 flex items-center justify-center">
+                  <div className="w-24 h-24 rounded-full bg-white/5 backdrop-blur-md border border-white/20 flex items-center justify-center">
                     <div className="text-center">
-                      <h3 className="font-display text-xl font-bold mb-1 text-white">NekstPei</h3>
-                      <p className="text-sm text-white/70">Blockchain</p>
+                      <h3 className="font-display text-lg font-bold mb-1 text-white">NekstPei</h3>
+                      <p className="text-xs text-white/70">Blockchain</p>
                     </div>
                   </div>
                   
                   {/* Connecting lines */}
-                  <div className="absolute top-1/2 left-0 w-1/3 h-px bg-gradient-to-r from-transparent to-white/20"></div>
-                  <div className="absolute top-1/2 right-0 w-1/3 h-px bg-gradient-to-l from-transparent to-white/20"></div>
-                  <div className="absolute top-0 left-1/2 w-px h-1/3 bg-gradient-to-b from-transparent to-white/20"></div>
-                  <div className="absolute bottom-0 left-1/2 w-px h-1/3 bg-gradient-to-t from-transparent to-white/20"></div>
+                  <div className="absolute top-1/2 left-0 w-1/3 h-px bg-gradient-to-r from-transparent to-white/10"></div>
+                  <div className="absolute top-1/2 right-0 w-1/3 h-px bg-gradient-to-l from-transparent to-white/10"></div>
+                  <div className="absolute top-0 left-1/2 w-px h-1/3 bg-gradient-to-b from-transparent to-white/10"></div>
+                  <div className="absolute bottom-0 left-1/2 w-px h-1/3 bg-gradient-to-t from-transparent to-white/10"></div>
                   
                   {/* Corner elements */}
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
+                  <div className="absolute top-2 left-2 w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
                     Stable
                   </div>
-                  <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
+                  <div className="absolute top-2 right-2 w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
                     Crypto
                   </div>
-                  <div className="absolute bottom-4 left-4 w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium text-center">
+                  <div className="absolute bottom-2 left-2 w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium text-center">
                     RWA
                   </div>
-                  <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-black/40 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
+                  <div className="absolute bottom-2 right-2 w-8 h-8 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
                     Assets
                   </div>
                 </div>
