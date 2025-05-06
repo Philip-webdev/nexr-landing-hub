@@ -66,7 +66,7 @@ const About = () => {
                   
                   {/* Corner elements */}
                   <div className="absolute top-2 left-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
-                    Stable
+                    Stable-coin
                   </div>
                   <div className="absolute top-2 right-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
                     Crypto
@@ -75,7 +75,7 @@ const About = () => {
                     RWA
                   </div>
                   <div className="absolute bottom-2 right-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
-                    Assets
+                    DeFi
                   </div>
                 </div>
               </div>

@@ -77,7 +77,7 @@ const Navbar = () => {
               About
             </a>
             <a
-              href="#contact"
+              href="https://nexr-pi.vercel.app/"
               className="bg-nexr-teal text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-nexr-teal/80 shadow-md hover:shadow-lg text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
