@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
-              <a href="https://nexr-pi.vercel.app/" className="button-primary flex items-center justify-center gap-2 group">
+              <a href="https://app.nekstpei.com" className="button-primary flex items-center justify-center gap-2 group">
                 Get Started <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a href="#features" className="button-outline flex items-center justify-center">

@@ -38,7 +38,7 @@ const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Stablecoins</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">NekstPei Token</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">RWA Tokenization</a></li>
-              <li><a href="https://nexr-pi.vercel.app/" className="text-gray-300 hover:text-white transition-colors">NekstPei Wallet</a></li>
+              <li><a href='https://app.nekstpei.com' className="text-gray-300 hover:text-white transition-colors">NekstPei Wallet</a></li>
             </ul>
           </div>
           
