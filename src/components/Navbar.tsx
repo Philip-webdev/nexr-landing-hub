@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'backdrop-blur-sm' : 'bg-transparent py-5'
+        isScrolled ? 'backdrop-blur-lg' : 'bg-transparent py-5'
       }`}
     >
       <div className="nexr-container flex justify-between items-center">
