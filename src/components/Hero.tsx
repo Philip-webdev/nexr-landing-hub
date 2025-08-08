@@ -41,33 +41,7 @@ const Hero = () => {
           </div>
           
           {/* Blockchain visualization */}
-          <div className="hidden lg:block relative">
-            <div className="relative z-10 opacity-0 animate-fade-in-delay-2">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/20 p-6 shadow-2xl overflow-hidden">
-                <div className="circuit-pattern absolute inset-0 opacity-20"></div>
-                <div className="relative h-full flex flex-col justify-between">
-                  {/* Blockchain visualization elements */}
-                  <div className="space-y-4">
-                    <div className="h-16 rounded-xl bg-white/10 animate-pulse-slow"></div>
-                    <div className="h-16 rounded-xl bg-white/10 animate-pulse-slow delay-150"></div>
-                    <div className="h-16 rounded-xl bg-white/10 animate-pulse-slow delay-300"></div>
-                  </div>
-                  
-                  <div className="mt-auto">
-                    <div className="h-24 rounded-xl bg-gradient-to-r from-nexr-teal/40 to-nexr-light-teal/40 p-4">
-                      <div className="h-full rounded-lg bg-white/10 flex items-center justify-center">
-                        <p className="text-white font-mono text-sm">NekstPei Blockchain</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Decorative elements */}
-            <div className="absolute top-1/2 -right-16 w-32 h-32 bg-nexr-teal/30 rounded-full filter blur-3xl animate-float"></div>
-            <div className="absolute -bottom-8 left-1/3 w-48 h-48 bg-nexr-light-teal/20 rounded-full filter blur-3xl animate-float delay-1000"></div>
-          </div>
+       
         </div>
       </div>
     </section>
