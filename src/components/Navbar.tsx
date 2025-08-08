@@ -27,12 +27,12 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-nav py-3' : 'bg-transparent py-5'
+        isScrolled ? 'backdrop-blur-sm' : 'bg-transparent py-5'
       }`}
     >
       <div className="nexr-container flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <div className="font-display text-2xl font-bold text-white">Nekst<span className="text-[RGB(0,131,208)]">Pei</span></div>
+          <div className="font-display text-2xl font-bold text-white">nekst<span className="text-[RGB(0,131,208)]">pei</span></div>
         </Link>
 
         {/* Desktop Navigation */}
