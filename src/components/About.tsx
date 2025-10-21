@@ -24,17 +24,15 @@ const About = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in-delay-1">
-              Bridging the Gap Between Traditional Finance and Web3
+              Bridging the Cost-Gap Between Traditional Products and Users Using Stable Cryptos
             </h2>
             
             <p className="text-lg mb-8 opacity-0 animate-fade-in-delay-2">
-              NekstPei Blockchain is pioneering the next generation of financial infrastructure, 
+              NekstPei  is pioneering the next generation of financial infrastructure, 
               creating a seamless bridge between traditional assets and the digital economy. 
               Our technology enables the transformation of real-world assets into secure, 
               tradable digital tokens while maintaining stability through our advanced stablecoin protocols.
-            </p>
-            
-            <div className="space-y-3 opacity-0 animate-fade-in-delay-3">
+              </p>
               {advantages.map((advantage, index) => (
                 <div key={index} className="flex items-start gap-3">
                   <CheckCircle2 size={20} className="text-nexr-teal mt-1 flex-shrink-0" />
@@ -82,7 +80,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+    
     </section>
   );
 };

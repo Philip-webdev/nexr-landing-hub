@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -153,4 +154,10 @@
   background-position: 0 0, 10px 10px, 10px 10px;
   background-attachment: fixed;
   opacity: 0.1;
+}
+
+#nav_buttons:hover {
+  background-color: white;
+  cursor: pointer;
+  font-weight: bold;
 }

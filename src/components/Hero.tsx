@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
             <div className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 opacity-0 animate-fade-in">
-              <p className="text-sm font-medium">Revolutionizing Blockchain Technology</p>
+              <p className="text-sm font-medium">Revolutionizing Blockchain Technology on campus</p>
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight opacity-0 animate-fade-in-delay-1">
