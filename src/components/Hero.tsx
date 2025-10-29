@@ -18,16 +18,16 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-white space-y-6">
             <div className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 opacity-0 animate-fade-in">
-              <p className="text-sm font-medium">Revolutionizing Blockchain Technology on campus</p>
+              <p className="text-sm font-medium">Fintech 3.0 Felicity First On Campus</p>
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight opacity-0 animate-fade-in-delay-1">
-              The Future of <span className="text-[RGB(0,131,208)]">Blockchain Assets</span> is Here
+              The Future of <span className="text-[RGB(0,131,208)]">Transparent Trade</span> is Here
             </h1>
             
             <p className="text-lg md:text-xl opacity-0 animate-fade-in-delay-2">
-              NekstPei Blockchain is pioneering the bridge between digital assets and real-world value, 
-              creating a more accessible and stable financial ecosystem.
+              nekstpei is pioneering the bridge between digital assets and real-world value, 
+              creating a Block-verse for truthful buyers and sellers for more accessible and stable financial ecosystem.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">

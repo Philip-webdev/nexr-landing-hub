@@ -4,11 +4,9 @@ import { CheckCircle2 } from 'lucide-react';
 
 const About = () => {
   const advantages = [
-    "Institutional-grade security protocols",
+    "Truthful prices of foods and services",
     "Transparent and audited smart contracts",
-    "Interoperability with major blockchain networks",
-    "Regulatory-compliant infrastructure",
-    "Unparalleled liquidity mechanisms"
+    "Passive Fats from Fintech 3.0"
   ];
 
   return (
@@ -24,14 +22,13 @@ const About = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in-delay-1">
-              Bridging the Cost-Gap Between Traditional Products and Users Using Stable Cryptos
+              Bridging the Cost-Gap Between Traditional Products and Consumers
             </h2>
             
             <p className="text-lg mb-8 opacity-0 animate-fade-in-delay-2">
-              NekstPei  is pioneering the next generation of financial infrastructure, 
-              creating a seamless bridge between traditional assets and the digital economy. 
-              Our technology enables the transformation of real-world assets into secure, 
-              tradable digital tokens while maintaining stability through our advanced stablecoin protocols.
+              NekstPei is a platform built to mitigate frustration arising from illegal prices of food commodities & services , 
+              creating a seamless bridge between traditional assets and the digital economy, 
+              Battling inflation using the stable-coins of Fintech 3.0
               </p>
               {advantages.map((advantage, index) => (
                 <div key={index} className="flex items-start gap-3">
