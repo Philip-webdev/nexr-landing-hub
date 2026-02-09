@@ -65,7 +65,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} NekstPei Blockchain. All rights reserved.
+            &copy; {new Date().getFullYear()} Trilliongrace Ltd. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-gray-400 text-sm hover:text-white transition-colors">Terms</a>
