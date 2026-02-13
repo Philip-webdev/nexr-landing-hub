@@ -1,27 +1,27 @@
 
 import React from 'react';
-import { DollarSign, Link, BarChart3, ArrowRight } from 'lucide-react';
+import { DollarSign, Link, BarChart3, ArrowRight, Rocket } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
       id: 1,
       icon: <DollarSign className="text-nexr-teal" size={32} />,
-      title: "Stablecoins",
-      description: "Our advanced stablecoin infrastructure ensures reliable value preservation backed by multiple asset classes.",
+      title: "Price tracking",
+      description: "Our price tracking infrastructure ensures reliable value observation and monitoring backed by immutable blocks.",
       delay: "animate-fade-in"
     },
     {
       id: 2,
-      icon: <BarChart3 className="text-nexr-teal" size={32} />,
-      title: "Cryptocurrency",
-      description: "Cutting-edge blockchain technology powering next-generation digital assets with enhanced security and scalability.",
+      icon: <Rocket className="text-nexr-teal" size={32} />,
+      title: "Proxy delivery",
+      description: "We are closer than you think, from  lecture halls to hostels, ehancing SDG-2 for Zero hunger by lightning fast food delivery.",
       delay: "animate-fade-in-delay-1"
     },
     {
       id: 3,
       icon: <Link className="text-nexr-teal" size={32} />,
-      title: "RWA Tokenization",
+      title: "RWA",
       description: "Transform real-world assets into tradable digital tokens, creating new investment opportunities with tangible backing.",
       delay: "animate-fade-in-delay-2"
     }
