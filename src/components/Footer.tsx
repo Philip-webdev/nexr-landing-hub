@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="nexr-container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6">NekstPei</h3>
+            <h3 className="text-2xl font-bold mb-6">nekstpei</h3>
             <p className="text-gray-300 mb-6">
-              The future of blockchain assets is here. Building bridges between digital innovation 
+              The future of traditional product is here. Building bridges between digital innovation 
               and real-world value.
             </p>
             <div className="flex gap-4">
@@ -33,12 +33,12 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-6">Products</h4>
+            <h4 className="text-lg font-semibold mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Stablecoins</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">NekstPei Token</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">RWA Tokenization</a></li>
-              <li><a href='https://app.nekstpei.com' className="text-gray-300 hover:text-white transition-colors">NekstPei Wallet</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Food security</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Price Management</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">RWA</a></li>
+              <li><a href='https://app.nekstpei.com' className="text-gray-300 hover:text-white transition-colors">nekstpei wallet 3.0</a></li>
             </ul>
           </div>
           
