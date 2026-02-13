@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl opacity-0 animate-fade-in-delay-2">
-              nekstpei is create a block-verse for truthful buyers and sellers for more accessible and stable food security system.
+              nekstpei is creating a block-verse for truthful buyers and sellers for more accessible and stable food security system.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
