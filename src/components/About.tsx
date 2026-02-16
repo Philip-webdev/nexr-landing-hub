@@ -32,20 +32,20 @@ const About = () => {
               </p>
               {advantages.map((advantage, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 size={20} className="text-nexr-teal mt-1 flex-shrink-0" />
+                  <CheckCircle2 size={20} className="text-[RGB(0,131,208)] mt-1 flex-shrink-0" />
                   <p>{advantage}</p>
                 </div>
               ))}
             </div>
           </div>
           
-          <div className="order-1 lg:order-2 opacity-0 animate-fade-in">
+          {/* <div className="order-1 lg:order-2 opacity-0 animate-fade-in">
             <div className="glass-card p-4 backdrop-blur-lg bg-white/5 border border-white/20">
               <div className="aspect-square rounded-xl bg-black/30 p-2 relative overflow-hidden">
                 <div className="absolute inset-0 circuit-pattern opacity-5"></div>
                 
-                {/* Visualization elements */}
-                <div className="relative h-full flex flex-col justify-center items-center">
+                
+                {/* <div className="relative h-full flex flex-col justify-center items-center">
                   <div className="w-24 h-24 rounded-full bg-white/5 backdrop-blur-md border border-white/20 flex items-center justify-center">
                     <div className="text-center">
                       <h3 className="font-display text-lg font-bold mb-1 text-white">NekstPei</h3>
@@ -53,13 +53,13 @@ const About = () => {
                     </div>
                   </div>
                   
-                  {/* Connecting lines */}
+                
                   <div className="absolute top-1/2 left-0 w-1/3 h-px bg-gradient-to-r from-transparent to-white/10"></div>
                   <div className="absolute top-1/2 right-0 w-1/3 h-px bg-gradient-to-l from-transparent to-white/10"></div>
                   <div className="absolute top-0 left-1/2 w-px h-1/3 bg-gradient-to-b from-transparent to-white/10"></div>
                   <div className="absolute bottom-0 left-1/2 w-px h-1/3 bg-gradient-to-t from-transparent to-white/10"></div>
                   
-                  {/* Corner elements */}
+                
                   <div className="absolute top-2 left-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
                     DePIN
                   </div>
@@ -75,7 +75,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
     
     </section>

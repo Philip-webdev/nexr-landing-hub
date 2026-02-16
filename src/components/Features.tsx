@@ -6,21 +6,21 @@ const Features = () => {
   const features = [
     {
       id: 1,
-      icon: <DollarSign className="text-nexr-teal" size={32} />,
+      icon: <DollarSign className=" text-[RGB(0,131,208)]" size={32} />,
       title: "Price tracking",
       description: "Our price tracking infrastructure ensures reliable value observation and monitoring backed by immutable blocks.",
       delay: "animate-fade-in"
     },
     {
       id: 2,
-      icon: <Rocket className="text-nexr-teal" size={32} />,
+      icon: <Rocket className="text-[RGB(0,131,208)]" size={32} />,
       title: "Proxy delivery",
       description: "We are closer than you think, from  lecture halls to hostels, ehancing SDG-2 for Zero hunger by lightning fast food delivery.",
       delay: "animate-fade-in-delay-1"
     },
     {
       id: 3,
-      icon: <Link className="text-nexr-teal" size={32} />,
+      icon: <Link className="text-[RGB(0,131,208)]" size={32} />,
       title: "RWA",
       description: "Transform real-world assets into tradable digital tokens, creating new investment opportunities with tangible backing.",
       delay: "animate-fade-in-delay-2"
@@ -60,7 +60,7 @@ const Features = () => {
               
               <p className="text-gray-300 mb-6">{feature.description}</p>
               
-              <a href="#" className="mt-auto text-nexr-teal font-medium inline-flex items-center gap-2 group">
+              <a href="#" className="mt-auto text-[RGB(0,131,208)] font-medium inline-flex items-center gap-2 group">
                 Learn more <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </a>
             </div>
