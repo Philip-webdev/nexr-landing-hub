@@ -7,7 +7,7 @@ function Vendor() {
   const handleTabChange = (tab: typeof activeTab) => setActiveTab(tab);
 
   return (
-    <div className="min-h-screen bg-white pt-4 font-[Lexend]">
+    <div className="min-h-screen bg-white pt-4 font-[orbitron]">
       {/* ✅ Header */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 px-4">
         {/* Logo */}

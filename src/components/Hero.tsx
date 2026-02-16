@@ -1,13 +1,12 @@
-
-import React from 'react';
+import '../index.css';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 pb-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-20 pb-20 overflow-hidden" style={{fontFamily:'Orbitron'}}>
       {/* Background elements */}
       <div className="absolute inset-0 animated-gradient opacity-100 -z-10"></div>
-      <div className="absolute inset-0 circuit-pattern -z-10"></div>
+      {/* <div className="absolute inset-0 circuit-pattern -z-10"></div> */}
       
       {/* Floating graphics */}
       <div className="absolute top-1/4 right-10 w-64 h-64 bg-white/10 rounded-full filter blur-3xl animate-float opacity-50"></div>
@@ -21,7 +20,7 @@ const Hero = () => {
               <p className="text-sm font-medium">Nextgen On Campus</p>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight opacity-0 animate-fade-in-delay-1">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight opacity-0 animate-fade-in-delay-1" >
               The Future of <span className="text-[RGB(0,131,208)]">Transparent Trade</span> is Here
             </h1>
             

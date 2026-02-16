@@ -45,7 +45,7 @@ function Vendor() {
 
 
   return (
-    <div className="min-h-screen bg-white pt-4 font-[Lexend]">
+    <div className="min-h-screen bg-white pt-4 font-[orbitron]">
       {/* HEADER */}
       <div className="flex flex-col sm:flex-row items-center justify-between px-4 py-2 gap-4">
         {/* Logo */}
