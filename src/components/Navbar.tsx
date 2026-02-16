@@ -1,4 +1,4 @@
-
+import '../index.css';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -30,9 +30,9 @@ const Navbar = () => {
         isScrolled ? 'backdrop-blur-lg' : 'bg-transparent py-5'
       }`}
     >
-      <div className="nexr-container flex justify-between items-center">
+      <div className="nexr-container flex justify-between items-center" >
         <Link to="/" className="flex items-center gap-2">
- <div className=" font-display text-2xl font-bold text-white">nekst<span className="text-[RGB(0,131,208)]">pei</span></div>
+ <div className=" font-display text-2xl font-bold text-white" style={{fontFamily:'Orbitron'}}>nekst<span className="text-[RGB(0,131,208)]">pei</span></div>
    </Link> 
 
         {/* Desktop Navigation */}
