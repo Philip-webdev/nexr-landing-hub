@@ -50,7 +50,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4 opacity-0 animate-fade-in-delay-3">
               <a 
-                href="https://app.nekstpei.com" 
+                href="https://app.nekstpei.com/#/welcome" 
                 className="button-primary flex items-center justify-center gap-2 group"
               >
                 Get Started 
