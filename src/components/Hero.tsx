@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section 
       className="relative min-h-screen flex items-center pt-20 pb-20 overflow-hidden" 
-      style={{ fontFamily: 'Orbitron' }}
+      style={{ fontFamily: 'Sora' }}
     >
       
       <div className="absolute inset-0 animated-gradient opacity-100 -z-10"></div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -42,7 +42,7 @@
 
   html {
     scroll-behavior: smooth;
-    font-family: Orbitron;
+    font-family: Sora;
   }
 
   body {
@@ -51,7 +51,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-medium tracking-tight;
-    font-family: Orbitron;
+    font-family: Sora;
   }
 }
 

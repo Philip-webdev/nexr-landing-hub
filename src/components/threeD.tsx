@@ -9,7 +9,7 @@ const StyledApp = styled.div`
   color: black;
   display: flex;
   position: absolute;
-  font-family: orbitron;
+  font-family: Sora;
   @media (prefers-color-scheme: dark) {
     background-color: transparent;
     color: white;
