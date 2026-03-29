@@ -98,7 +98,12 @@ const Index = () => {
       <main>
         <Hero />
         <PartnerCarousel />
-
+  <style>{`
+        @keyframes scroll-left {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
         <Features />
         <About />
       </main>
