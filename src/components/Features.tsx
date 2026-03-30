@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DollarSign, Link, BarChart3, ArrowRight, Rocket } from 'lucide-react';
+import { DollarSign, Link, BarChart3, ArrowRight, Rocket, Send } from 'lucide-react';
 
 const Features = () => {
   const features = [
@@ -20,9 +20,9 @@ const Features = () => {
     },
     {
       id: 3,
-      icon: <Link className="text-[RGB(0,131,208)]" size={32} />,
-      title: "RWA",
-      description: "Transform real-world assets into tradable digital tokens, creating new investment opportunities with tangible backing.",
+      icon: <Send className="text-[RGB(0,131,208)]" size={32} />,
+      title: "Send & receive meals",
+      description: "Send and receive food across continents of the world.",
       delay: "animate-fade-in-delay-2"
     }
   ];
