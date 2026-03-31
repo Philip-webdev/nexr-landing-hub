@@ -9,6 +9,7 @@ import CampusHungerStory from './Campushungerstory';
 
 
 const PARTNERS = [
+  {name: "Kelogg's", logo: '/download.png'},
   {name: 'Honeywell', logo:'/honeywell.png'},
   { name: "Unilever",       logo: "/unilever.png" },
     { name: "Danone",       logo: "/danone.png" },
