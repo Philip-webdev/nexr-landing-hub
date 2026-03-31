@@ -7,10 +7,11 @@ import About from '@/components/About';
 import Footer from '@/components/Footer';
 import CampusHungerStory from './Campushungerstory';
 
-
 const PARTNERS = [
   {name: "Kelogg's", logo: '/download.png'},
   {name: 'Honeywell', logo:'/honeywell.png'},
+  {name: 'Goldenpenny', logo:'/goldenpenny.jfif'},
+  {name: 'Dufil', logo:'/dufil.jfif'},
   { name: "Unilever",       logo: "/unilever.png" },
     { name: "Danone",       logo: "/danone.png" },
   { name: "Nestle",  logo: "/nestle.jfif" },
