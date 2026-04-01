@@ -639,7 +639,7 @@ function ChapterVision(): React.ReactElement {
               specifically for this problem.
             </p>
             <p style={{ fontFamily: B.sans, fontWeight: 700, fontSize: "1rem", color: "#1A1A1A", marginTop: "1rem", lineHeight: 1.7 }}>
-              That is what CampusFeed is built to do.
+              That is what nekstpei is built to do.
             </p>
           </div>
         </div>
