@@ -17,7 +17,7 @@ const B = {
 interface CostItem    { title: string; body: string; }
 interface GoalItem    { n: string; title: string; body: string; }
 interface CounterProps{ to: number; suffix?: string; decimals?: number; }
-interface MealPkg     { icon: React.ReactNode; name: string; desc: string; price: string; badge: string; }
+interface MealPkg     { icon: React.ReactNode; name: string; desc: string; }
 interface GiftCard    { from: string; fFlag: string; to: string; tFlag: string; campus: string; meal: string; msg: string; }
 interface FlowStep    { icon: React.ReactNode; label: string; detail: string; }
 
@@ -408,10 +408,10 @@ const FLOW_STEPS: FlowStep[] = [
 ];
 
 const MEAL_PKGS: MealPkg[] = [
-  { icon: <IconSun />,      name: "Daily Essentials",   desc: "3 balanced meals for the day",      price: "₦2,400",  badge: "Most Popular" },
-  { icon: <IconCalendar />, name: "Weekly Nourish",     desc: "7 days of nutritious campus meals", price: "₦14,000", badge: "Best Value"   },
-  { icon: <IconBook />,     name: "Study Fuel Pack",    desc: "5 protein-rich focus meals",        price: "₦8,500",  badge: "Exam Season"  },
-  { icon: <IconHeart />,    name: "Surprise Meal Gift", desc: "One warm meal, sent with love",     price: "₦1,800",  badge: "Send Now"     },
+  { icon: <IconSun />,      name: "Daily Essentials",   desc: "3 balanced meals for the day"     },
+  { icon: <IconCalendar />, name: "Weekly Nourish",     desc: "7 days of nutritious campus meals"  },
+  { icon: <IconBook />,     name: "Study Fuel Pack",    desc: "5 protein-rich focus meals"  },
+  { icon: <IconHeart />,    name: "Surprise Meal Gift", desc: "One warm meal, sent with love"  },
 ];
 
 const GIFT_CARDS: GiftCard[] = [
@@ -558,8 +558,8 @@ function ChapterDiaspora() {
           </div>
         </div>
 
-        {/* ── MEAL PACKAGES ── */}
-        <div style={{ ...fade(v, .15), marginBottom: mob ? "3.5rem" : "5rem" }}>
+     
+        {/* <div style={{ ...fade(v, .15), marginBottom: mob ? "3.5rem" : "5rem" }}>
           <p style={{ fontFamily: B.sans, fontSize: ".62rem", fontWeight: 800, letterSpacing: ".18em", textTransform: "uppercase", color: "rgba(255,255,255,.22)", marginBottom: "1.5rem" }}>
             Available gift packages
           </p>
@@ -567,18 +567,18 @@ function ChapterDiaspora() {
             {MEAL_PKGS.map((pkg, i) => (
               <div key={i} className="pkg-card"
                 style={{ background: B.blueA(.03), border: `1px solid rgba(255,255,255,.07)`, borderRadius: 16, padding: mob ? "1.25rem" : "1.5rem", position: "relative", overflow: "hidden" }}>
-                {/* badge pill */}
+             
                 <div style={{ position: "absolute", top: ".75rem", right: ".75rem", background: B.blueA(.18), borderRadius: 999, padding: ".18rem .55rem" }}>
-                  <span style={{ fontFamily: B.sans, fontSize: ".56rem", fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: B.blue }}>{pkg.badge}</span>
+                  <span style={{ fontFamily: B.sans, fontSize: ".56rem", fontWeight: 700, letterSpacing: ".08em", textTransform: "uppercase", color: B.blue }}></span>
                 </div>
                 <div style={{ color: B.blue, marginBottom: ".85rem", display: "flex" }}>{pkg.icon}</div>
                 <p style={{ fontFamily: B.sans, fontWeight: 800, fontSize: ".9rem", color: "#fff", marginBottom: ".3rem" }}>{pkg.name}</p>
                 <p style={{ fontFamily: B.sans, fontWeight: 300, fontSize: ".78rem", color: "rgba(255,255,255,.4)", lineHeight: 1.5, marginBottom: "1rem" }}>{pkg.desc}</p>
-                <p style={{ fontFamily: B.sans, fontWeight: 900, fontSize: "1.15rem", color: B.blue }}>{pkg.price}</p>
+                <p style={{ fontFamily: B.sans, fontWeight: 900, fontSize: "1.15rem", color: B.blue }}></p>
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* ── FLIP GIFT CARDS ── */}
         <div style={{ ...fade(v, .2) }}>
