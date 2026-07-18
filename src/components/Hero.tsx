@@ -94,14 +94,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right: 3D model */}
-          {showModel && (
+      
+          {/* {showModel && (
             <div className="hidden lg:block w-full h-[580px] relative">
               <div className="absolute inset-0">
                 <Nextthree />
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </section>

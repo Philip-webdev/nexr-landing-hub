@@ -14,8 +14,8 @@ import justriteImg from '@/assets/justrite.png';
 
 const STORES = [
   { name: 'FoodCo', src: foodcoImg },
-  { name: 'Shoprite', src: shopriteImg },
-  { name: 'Justrite Superstore', src: justriteImg },
+  { name: 'Shoprite', src: "/shoprite-removebg-preview.png" },
+  { name: 'Justrite Superstore', src: "/justrite-removebg-preview.png" },
 ];
 
 const StoreCarousel = () => {
