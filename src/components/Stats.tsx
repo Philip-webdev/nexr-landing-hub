@@ -71,27 +71,27 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
 const stats: StatItemProps[] = [
   {
     icon: <TrendingUp size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '73',
+    value: '15.15',
     suffix: '%',
-    label: 'Students overspend on meals',
+    label: 'Nigeria headline inflation (Dec 2025, NBS)',
   },
   {
     icon: <Users size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '2.4',
+    value: '30.6',
     suffix: 'M',
-    label: 'People facing food insecurity',
+    label: 'Nigerians facing food insecurity (FAO / Cadre Harmonisé)',
   },
   {
     icon: <Globe size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '36',
+    value: '11.08',
     suffix: '%',
-    label: 'Average price markup on food',
+    label: 'Food inflation, Nov 2025 (NBS CPI)',
   },
   {
     icon: <Clock size={20} style={{ color: 'rgb(0,131,208)' }} />,
     value: '3',
     suffix: 'x',
-    label: 'Faster delivery than alternatives',
+    label: 'Faster campus delivery than alternatives',
   },
 ];
 
