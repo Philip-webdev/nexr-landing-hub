@@ -1,83 +1,107 @@
+import { Shield, Zap, Wallet, Eye } from 'lucide-react';
+import { useCurrency } from '@/hooks/useCurrency';
 
-import React from 'react';
-import { CheckCircle2 } from 'lucide-react';
+const pillars = [
+  {
+    icon: <Shield size={22} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Fair, transparent pricing',
+    text: 'Every transaction is recorded on an immutable ledger. You see exactly what things cost — and what they should cost.',
+  },
+  {
+    icon: <Zap size={22} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Budget-first design',
+    text: 'Students, families, individuals — everyone gets tools built around their actual food budget, not some algorithm\'s guess.',
+  },
+  {
+    icon: <Eye size={22} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Parental monitoring',
+    text: 'Parents can track their children\'s meals and nutrition in real time — whether they\'re on campus or across the globe.',
+  },
+  {
+    icon: <Wallet size={22} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Food security infrastructure',
+    text: 'The backbone of a system where access to quality food isn\'t a privilege. Community-driven, always transparent, always fair.',
+  },
+];
 
 const About = () => {
-  const advantages = [
-    "Truthful prices of foods and services",
-    "Transparent and audited smart contracts",
-    "Passive Fats from Fintech 3.0"
+  const { convert } = useCurrency();
+
+  const priceItems = [
+    { item: 'Rice (5kg)', oldUsd: 12.40, nowUsd: 9.60, save: '23%' },
+    { item: 'Eggs (dozen)', oldUsd: 4.80, nowUsd: 3.50, save: '27%' },
+    { item: 'Cooking oil (3L)', oldUsd: 8.90, nowUsd: 7.10, save: '20%' },
   ];
 
   return (
-    <section id="about" className="section-padding relative overflow-hidden bg-black text-white">
-      {/* Background pattern with transparency */}
-      <div className="absolute inset-0 circuit-pattern opacity-10 -z-0"></div>
-      
-      <div className="nexr-container relative z-10">
+    <section id="about" className="section-padding relative overflow-hidden">
+      <div className="section-divider mb-16" />
+
+      <div className="nexr-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="order-2 lg:order-1">
-            <div className="inline-block px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 opacity-0 animate-fade-in">
-              <p className="text-sm font-medium">Our Mission</p>
+          {/* Left: Copy */}
+          <div data-reveal>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.06] bg-white/[0.02] mb-6">
+              <span className="text-xs font-medium text-gray-500 tracking-wide uppercase">Why we exist</span>
             </div>
-            
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in-delay-1">
-              Bridging the Cost-Gap Between Traditional Products and Consumers
+
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 leading-tight text-balance">
+              Food shouldn't be a financial{' '}
+              <span style={{ color: 'rgb(0,131,208)' }}>stress test</span>
             </h2>
-            
-            <p className="text-lg mb-8 opacity-0 animate-fade-in-delay-2">
-              NekstPei is a platform built to mitigate frustration arising from illegal prices of food commodities & services , 
-              creating a seamless bridge between traditional assets and the digital economy, 
-              Battling inflation using the stable-coins of Fintech 3.0
-              </p>
-              {advantages.map((advantage, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 size={20} className="text-[RGB(0,131,208)] mt-1 flex-shrink-0" />
-                  <p>{advantage}</p>
+
+            <p className="text-gray-500 text-base leading-relaxed mb-10 max-w-lg">
+              We watched students skip meals. Families stretch budgets thin. And middlemen take their cut
+              without adding a cent of value. Nekstpei exists because the system was broken — and technology
+              gives us the tools to fix it.
+            </p>
+
+            <div className="space-y-6">
+              {pillars.map((pillar, i) => (
+                <div key={i} className="flex items-start gap-4" data-reveal>
+                  <div className={`stagger-${i + 1} flex-shrink-0 w-11 h-11 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center`}>
+                    {pillar.icon}
+                  </div>
+                  <div className={`stagger-${i + 1}`}>
+                    <h4 className="text-sm font-semibold text-white mb-1">{pillar.title}</h4>
+                    <p className="text-sm text-gray-500 leading-relaxed">{pillar.text}</p>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
-          
-          {/* <div className="order-1 lg:order-2 opacity-0 animate-fade-in">
-            <div className="glass-card p-4 backdrop-blur-lg bg-white/5 border border-white/20">
-              <div className="aspect-square rounded-xl bg-black/30 p-2 relative overflow-hidden">
-                <div className="absolute inset-0 circuit-pattern opacity-5"></div>
-                
-                
-                {/* <div className="relative h-full flex flex-col justify-center items-center">
-                  <div className="w-24 h-24 rounded-full bg-white/5 backdrop-blur-md border border-white/20 flex items-center justify-center">
-                    <div className="text-center">
-                      <h3 className="font-display text-lg font-bold mb-1 text-white">NekstPei</h3>
-                      <p className="text-xs text-white/70">Blockchain</p>
+
+          {/* Right: Visual */}
+          <div data-reveal="right" className="relative">
+            <div className="relative rounded-2xl overflow-hidden border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-8">
+              <div className="space-y-5">
+                {priceItems.map((tx, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center justify-between p-4 rounded-xl bg-white/[0.03] border border-white/[0.04] hover:border-[rgba(0,131,208,0.15)] transition-colors duration-500"
+                  >
+                    <div>
+                      <p className="text-sm font-medium text-white">{tx.item}</p>
+                      <p className="text-xs text-gray-600 line-through mt-0.5">{convert(tx.oldUsd)}</p>
+                    </div>
+                    <div className="text-right">
+                      <p className="text-sm font-bold" style={{ color: 'rgb(0,131,208)' }}>{convert(tx.nowUsd)}</p>
+                      <p className="text-xs text-green-500/80 mt-0.5">Save {tx.save}</p>
                     </div>
                   </div>
-                  
-                
-                  <div className="absolute top-1/2 left-0 w-1/3 h-px bg-gradient-to-r from-transparent to-white/10"></div>
-                  <div className="absolute top-1/2 right-0 w-1/3 h-px bg-gradient-to-l from-transparent to-white/10"></div>
-                  <div className="absolute top-0 left-1/2 w-px h-1/3 bg-gradient-to-b from-transparent to-white/10"></div>
-                  <div className="absolute bottom-0 left-1/2 w-px h-1/3 bg-gradient-to-t from-transparent to-white/10"></div>
-                  
-                
-                  <div className="absolute top-2 left-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
-                    DePIN
-                  </div>
-                  <div className="absolute top-2 right-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
-                    Crypto
-                  </div>
-                  <div className="absolute bottom-2 left-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium text-center">
-                    RWA
-                  </div>
-                  <div className="absolute bottom-2 right-2 w-16 h-16 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-xs font-medium">
-                    DeFi
-                  </div>
+                ))}
+
+                <div className="flex items-center justify-center gap-2 py-3 rounded-xl border border-dashed border-white/[0.08]">
+                  <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+                  <span className="text-xs text-gray-500 font-medium">Prices verified in real time</span>
                 </div>
               </div>
             </div>
-          </div> */}
+
+            <div className="absolute -inset-4 rounded-3xl bg-[radial-gradient(ellipse_at_center,rgba(0,131,208,0.06),transparent_70%)] -z-10" />
+          </div>
         </div>
-    
+      </div>
     </section>
   );
 };
