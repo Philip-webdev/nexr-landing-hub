@@ -8,44 +8,35 @@ import About from '@/components/About';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
+import foodcoAsset from '@/assets/foodco.png.asset.json';
+import shopriteAsset from '@/assets/shoprite.jpg.asset.json';
+import justriteAsset from '@/assets/justrite.png.asset.json';
+
 const STORES = [
-  'Shoprite',
-  'Justrite',
-  'Checkers',
-  'Spar',
-  'Pick n Pay',
-  'Woolworths',
-  'Carrefour',
-  'Walmart',
-  'Tesco',
-  'Aldi',
-  'Lidl',
-  'Costco',
+  { name: 'FoodCo', src: foodcoAsset.url },
+  { name: 'Shoprite', src: shopriteAsset.url },
+  { name: 'Justrite Superstore', src: justriteAsset.url },
 ];
 
 const StoreCarousel = () => {
-  const items = [...STORES, ...STORES];
-
   return (
     <section className="relative py-14" data-reveal>
       <p className="text-center text-xs text-gray-600 font-medium uppercase tracking-[0.2em] mb-10">
         Sourced from stores you trust
       </p>
 
-      <div className="relative overflow-hidden">
-        <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#06090f] to-transparent z-10 pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#06090f] to-transparent z-10 pointer-events-none" />
-
-        <div className="partner-track">
-          {items.map((store, index) => (
+      <div className="nexr-container">
+        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 md:gap-20">
+          {STORES.map((store) => (
             <div
-              key={index}
-              className="flex items-center justify-center flex-shrink-0 px-6 py-3 rounded-lg border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-[rgba(0,131,208,0.1)] transition-all duration-500"
-              style={{ minWidth: '140px' }}
+              key={store.name}
+              className="flex items-center justify-center h-16 sm:h-20"
             >
-              <span className="text-sm font-semibold text-gray-500 whitespace-nowrap tracking-wide">
-                {store}
-              </span>
+              <img
+                src={store.src}
+                alt={store.name}
+                className="max-h-full w-auto object-contain grayscale opacity-60 hover:opacity-90 hover:grayscale-0 transition-all duration-500"
+              />
             </div>
           ))}
         </div>
