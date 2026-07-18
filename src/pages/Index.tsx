@@ -8,14 +8,14 @@ import About from '@/components/About';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
-import foodcoAsset from '@/assets/foodco.png.asset.json';
-import shopriteAsset from '@/assets/shoprite.jpg.asset.json';
-import justriteAsset from '@/assets/justrite.png.asset.json';
+import foodcoImg from '@/assets/foodco.png';
+import shopriteImg from '@/assets/shoprite.jpg';
+import justriteImg from '@/assets/justrite.png';
 
 const STORES = [
-  { name: 'FoodCo', src: foodcoAsset.url },
-  { name: 'Shoprite', src: shopriteAsset.url },
-  { name: 'Justrite Superstore', src: justriteAsset.url },
+  { name: 'FoodCo', src: foodcoImg },
+  { name: 'Shoprite', src: shopriteImg },
+  { name: 'Justrite Superstore', src: justriteImg },
 ];
 
 const StoreCarousel = () => {
