@@ -22,7 +22,7 @@ const StoreCarousel = () => {
   return (
     <section className="relative py-14" data-reveal>
       <p className="text-center text-xs text-gray-600 font-medium uppercase tracking-[0.2em] mb-10">
-        Sourced from stores you trust
+        Redeemable at stores you trust
       </p>
 
       <div className="nexr-container">
