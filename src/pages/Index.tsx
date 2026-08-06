@@ -69,7 +69,6 @@ const Index = () => {
       <main>
         <Hero />
         <StoreCarousel />
-        <Stats />
         <Features />
         <HowItWorks />
         <About />
