@@ -1,29 +1,29 @@
-import { Search, ShoppingCart, Truck, CheckCircle } from 'lucide-react';
+import { Wallet, Send, Search, QrCode } from 'lucide-react';
 
 const steps = [
   {
     num: '01',
-    icon: <Search size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Set your budget',
-    desc: 'Tell us your weekly food budget. We\'ll find the best deals within it.',
+    icon: <Wallet size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Load funds',
+    desc: 'A parent, employer or NGO tops up and converts money into Nekstpei food credit.',
   },
   {
     num: '02',
-    icon: <ShoppingCart size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Pick your groceries',
-    desc: 'Browse verified vendors with real-time pricing. No surprises.',
+    icon: <Send size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Send food value',
+    desc: 'Transfer credit to a student, household or beneficiary — food-specific, but still their choice.',
   },
   {
     num: '03',
-    icon: <Truck size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Get it delivered',
-    desc: 'Campus proxies deliver from market to your door. Fast, cheap, reliable.',
+    icon: <Search size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Find a vendor',
+    desc: 'Browse verified merchants nearby and let the AI assistant match meals to the remaining balance.',
   },
   {
     num: '04',
-    icon: <CheckCircle size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Prices verified',
-    desc: 'Every price is checked against live market data. Full transparency.',
+    icon: <QrCode size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Scan & redeem',
+    desc: 'A QR scan releases the value, the food is handed over, and the merchant is settled automatically.',
   },
 ];
 
@@ -38,10 +38,11 @@ const HowItWorks = () => {
             <span className="text-xs font-medium text-gray-500 tracking-wide uppercase">How it works</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 text-balance">
-            Four steps to smarter groceries
+            Money → food credit → real food
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
-            From budget to delivery — the whole flow is transparent, fast, and built for people who've got better things to do than stress about food prices.
+            Physical food stays physical. What moves online is the verified right to buy or redeem it —
+            recorded, reconciled and settled end to end.
           </p>
         </div>
 
@@ -52,7 +53,6 @@ const HowItWorks = () => {
               data-reveal
               className={`stagger-${i + 1} relative p-6 rounded-2xl border border-white/[0.04] bg-white/[0.01] hover:bg-white/[0.03] hover:border-[rgba(0,131,208,0.12)] transition-all duration-500 group`}
             >
-              {/* Step number */}
               <div className="text-5xl font-bold text-white/[0.04] absolute top-4 right-5 select-none group-hover:text-[rgba(0,131,208,0.08)] transition-colors duration-500">
                 {step.num}
               </div>
