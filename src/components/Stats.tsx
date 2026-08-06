@@ -1,14 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Users, Globe, Clock } from 'lucide-react';
+import { Store, Users, Repeat, Wallet } from 'lucide-react';
 
 interface StatItemProps {
   icon: React.ReactNode;
   value: string;
   label: string;
   suffix?: string;
+  prefix?: string;
 }
 
-const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
+const StatItem = ({ icon, value, label, suffix = '', prefix = '' }: StatItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [displayValue, setDisplayValue] = useState('0');
   const hasAnimated = useRef(false);
@@ -32,7 +33,7 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
   }, [value]);
 
   const animateCount = () => {
-    const target = parseFloat(value);
+    const target = parseFloat(value.replace(/,/g, ''));
     const isDecimal = value.includes('.');
     const duration = 2000;
     const startTime = performance.now();
@@ -43,7 +44,9 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
       const eased = 1 - Math.pow(1 - progress, 3);
       const current = target * eased;
 
-      setDisplayValue(isDecimal ? current.toFixed(1) : Math.floor(current).toString());
+      setDisplayValue(
+        isDecimal ? current.toFixed(1) : Math.floor(current).toLocaleString()
+      );
 
       if (progress < 1) {
         requestAnimationFrame(tick);
@@ -61,7 +64,7 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
         {icon}
       </div>
       <div className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-        {displayValue}{suffix}
+        {prefix}{displayValue}{suffix}
       </div>
       <div className="text-sm text-gray-500">{label}</div>
     </div>
@@ -70,28 +73,28 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
 
 const stats: StatItemProps[] = [
   {
-    icon: <TrendingUp size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '15.15',
-    suffix: '%',
-    label: 'Nigeria headline inflation (Dec 2025, NBS)',
+    icon: <Store size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    value: '50',
+    suffix: '+',
+    label: 'Active merchants targeted in year one',
   },
   {
     icon: <Users size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '30.6',
+    value: '5,000',
+    label: 'Monthly active users by year-end',
+  },
+  {
+    icon: <Wallet size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    value: '25',
+    prefix: '₦',
     suffix: 'M',
-    label: 'Nigerians facing food insecurity (FAO / Cadre Harmonisé)',
+    label: 'Monthly food-value volume goal',
   },
   {
-    icon: <Globe size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '11.08',
-    suffix: '%',
-    label: 'Food inflation, Nov 2025 (NBS CPI)',
-  },
-  {
-    icon: <Clock size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '3',
-    suffix: 'x',
-    label: 'Faster campus delivery than alternatives',
+    icon: <Repeat size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    value: '1',
+    suffix: '–2',
+    label: 'Pilot campus communities at launch',
   },
 ];
 
@@ -111,6 +114,10 @@ const Stats = () => {
             </div>
           ))}
         </div>
+
+        <p className="text-center text-xs text-gray-600 mt-10">
+          Illustrative year-one pilot targets from the Nekstpei business plan — not audited forecasts.
+        </p>
       </div>
     </section>
   );
