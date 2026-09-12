@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Users, Globe, Clock } from 'lucide-react';
+import { TrendingUp, Users, Globe, Heart } from 'lucide-react';
 
 interface StatItemProps {
   icon: React.ReactNode;
@@ -70,28 +70,28 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
 
 const stats: StatItemProps[] = [
   {
-    icon: <TrendingUp size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '15.15',
+    icon: <Heart size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    value: '73',
     suffix: '%',
-    label: 'Nigeria headline inflation (Dec 2025, NBS)',
+    label: 'of African students skip meals during term',
   },
   {
     icon: <Users size={20} style={{ color: 'rgb(0,131,208)' }} />,
     value: '30.6',
     suffix: 'M',
-    label: 'Nigerians facing food insecurity (FAO / Cadre Harmonisé)',
+    label: 'Nigerians facing food insecurity',
   },
   {
     icon: <Globe size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '11.08',
+    value: '36',
     suffix: '%',
-    label: 'Food inflation, Nov 2025 (NBS CPI)',
+    label: 'of European students report food insecurity',
   },
   {
-    icon: <Clock size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '3',
-    suffix: 'x',
-    label: 'Faster campus delivery than alternatives',
+    icon: <TrendingUp size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    value: '1',
+    suffix: ' in 3',
+    label: 'Nigerian students went a full day without eating',
   },
 ];
 

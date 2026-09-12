@@ -11,7 +11,7 @@ const Footer = () => {
               nekst<span style={{ color: 'rgb(0,131,208)' }}>pei</span>
             </span>
             <p className="text-sm text-gray-600 mt-4 leading-relaxed max-w-xs">
-              Fair groceries, transparent prices, and food security — for the people who need it most.
+              Send food, not just money. A digital food-value network connecting people, vendors, and communities.
             </p>
             <div className="flex gap-3 mt-5">
               <a
@@ -35,7 +35,7 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">Product</h4>
             <ul className="space-y-2.5">
-              {['Smart Budgets', 'Price Tracker', 'Proxy Delivery', 'nekstpei Wallet'].map((item) => (
+              {['Food Wallet', 'Food Transfer', 'Food Marketplace', 'AI Meal Planning'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-sm text-gray-600 hover:text-gray-300 transition-colors duration-300">
                     {item}
@@ -49,7 +49,7 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">Resources</h4>
             <ul className="space-y-2.5">
-              {['Whitepaper', 'Security', 'Roadmap', 'Blog'].map((item) => (
+              {['Business Plan', 'Security', 'Roadmap', 'Blog'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-sm text-gray-600 hover:text-gray-300 transition-colors duration-300">
                     {item}
@@ -63,7 +63,7 @@ const Footer = () => {
           <div>
             <h4 className="text-sm font-semibold text-white mb-4">Company</h4>
             <ul className="space-y-2.5">
-              {['About', 'Whitepaper', 'Roadmap', 'Blog', 'Press', 'Privacy Policy'].map((item) => (
+              {['About', 'Careers', 'Press', 'Privacy Policy', 'Terms of Service'].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-sm text-gray-600 hover:text-gray-300 transition-colors duration-300">
                     {item}
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-white/[0.04] mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-700">
-            &copy; {new Date().getFullYear()} Trilliongrace Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} Nekstpei. All rights reserved.
           </p>
           <div className="flex gap-5">
             <a href="#" className="text-xs text-gray-700 hover:text-gray-400 transition-colors">Terms</a>

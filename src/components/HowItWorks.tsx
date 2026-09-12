@@ -1,29 +1,29 @@
-import { Search, ShoppingCart, Truck, CheckCircle } from 'lucide-react';
+import { Wallet, Send, QrCode, CheckCircle } from 'lucide-react';
 
 const steps = [
   {
     num: '01',
-    icon: <Search size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Set your budget',
-    desc: 'Tell us your weekly food budget. We\'ll find the best deals within it.',
+    icon: <Wallet size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Fund your wallet',
+    desc: 'Load food credits to your Nekstpei wallet. Start with as little as ₦1,000.',
   },
   {
     num: '02',
-    icon: <ShoppingCart size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Pick your groceries',
-    desc: 'Browse verified vendors with real-time pricing. No surprises.',
+    icon: <Send size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Send food value',
+    desc: 'Transfer food credits to anyone — students, family, friends. No bank transfer stress.',
   },
   {
     num: '03',
-    icon: <Truck size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Get it delivered',
-    desc: 'Campus proxies deliver from market to your door. Fast, cheap, reliable.',
+    icon: <QrCode size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    title: 'Redeem at vendors',
+    desc: 'Scan QR code at verified campus vendors. Get fresh, affordable meals.',
   },
   {
     num: '04',
     icon: <CheckCircle size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    title: 'Prices verified',
-    desc: 'Every price is checked against live market data. Full transparency.',
+    title: 'Eat well, track easily',
+    desc: 'AI-powered budgeting helps you plan meals. Full transparency on every transaction.',
   },
 ];
 
@@ -38,10 +38,10 @@ const HowItWorks = () => {
             <span className="text-xs font-medium text-gray-500 tracking-wide uppercase">How it works</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-5 text-balance">
-            Four steps to smarter groceries
+            Four steps to food freedom
           </h2>
           <p className="text-gray-500 text-base leading-relaxed">
-            From budget to delivery — the whole flow is transparent, fast, and built for people who've got better things to do than stress about food prices.
+            From funding to eating — the whole flow is transparent, fast, and built for people who want to ensure their loved ones eat well.
           </p>
         </div>
 

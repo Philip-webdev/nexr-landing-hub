@@ -8,38 +8,49 @@ import About from '@/components/About';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
-import foodcoImg from '@/assets/foodco.png';
-import shopriteImg from '@/assets/shoprite.jpg';
-import justriteImg from '@/assets/justrite.png';
-
-const STORES = [
-  { name: 'FoodCo', src: foodcoImg },
-  { name: 'Shoprite', src: "/shoprite-removebg-preview.png" },
-  { name: 'Justrite Superstore', src: "/justrite-removebg-preview.png" },
+const VENDORS = [
+  { name: 'Campus Cafeterias', image: '/vendor-cafe.jpg', desc: 'Affordable campus meals' },
+  { name: 'Local Restaurants', image: '/vendor-restaurant.jpg', desc: 'Quality home cooking' },
+  { name: 'Grocery Stores', image: '/vendor-market.jpg', desc: 'Fresh market produce' },
 ];
 
-const StoreCarousel = () => {
+const VendorCarousel = () => {
   return (
-    <section className="relative py-14" data-reveal>
-      <p className="text-center text-xs text-gray-600 font-medium uppercase tracking-[0.2em] mb-10">
-        Sourced from stores you trust
-      </p>
-
+    <section className="relative pb-12 overflow-hidden" data-reveal>
       <div className="nexr-container">
-        <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 md:gap-20">
-          {STORES.map((store) => (
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.06] bg-white/[0.02] mb-6">
+            <span className="text-xs font-medium text-gray-500 tracking-wide uppercase">Vendor Network</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Trusted vendors, real food
+          </h2>
+          <p className="text-gray-500 text-base max-w-xl mx-auto">
+            Every vendor in our network is selected for quality and affordability. From campus cafeterias to local markets.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {VENDORS.map((vendor) => (
             <div
-              key={store.name}
-              className="flex items-center justify-center h-16 sm:h-20"
+              key={vendor.name}
+              className="group relative rounded-2xl overflow-hidden aspect-[4/3]"
             >
               <img
-                src={store.src}
-                alt={store.name}
-                className="max-h-full w-auto object-contain grayscale opacity-60 hover:opacity-90 hover:grayscale-0 transition-all duration-500"
+                src={vendor.image}
+                alt={vendor.name}
+                className="w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <h3 className="text-lg font-semibold text-white mb-1">{vendor.name}</h3>
+                <p className="text-sm text-gray-300">{vendor.desc}</p>
+              </div>
             </div>
           ))}
         </div>
+
+
       </div>
     </section>
   );
@@ -69,7 +80,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <StoreCarousel />
+        <VendorCarousel />
         <Stats />
         <Features />
         <HowItWorks />
