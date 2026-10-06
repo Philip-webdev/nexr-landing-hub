@@ -49,13 +49,45 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right: App UI */}
+          {/* Right: iPhone mockup */}
           <div className="flex justify-center lg:justify-end">
-            <img
-              src="/nextplate.png"
-              alt="Nekstpei App"
-              className="w-full max-w-[480px]"
-            />
+            <div className="relative">
+              {/* Ambient glow */}
+              <div className="absolute -inset-10 bg-[rgb(0,131,208)]/6 rounded-full blur-3xl" />
+
+              {/* Phone */}
+              <div className="relative w-[290px] sm:w-[310px]">
+                {/* Side buttons — natural titanium */}
+                <div className="absolute -left-[3px] top-[92px] w-[3px] h-[26px] bg-gradient-to-r from-[#6b6b6b] to-[#3a3a3a] rounded-l-sm" />
+                <div className="absolute -left-[3px] top-[134px] w-[3px] h-[54px] bg-gradient-to-r from-[#6b6b6b] to-[#3a3a3a] rounded-l-sm" />
+                <div className="absolute -left-[3px] top-[196px] w-[3px] h-[54px] bg-gradient-to-r from-[#6b6b6b] to-[#3a3a3a] rounded-l-sm" />
+                <div className="absolute -right-[3px] top-[160px] w-[3px] h-[80px] bg-gradient-to-l from-[#6b6b6b] to-[#3a3a3a] rounded-r-sm" />
+
+                {/* Titanium outer frame */}
+                <div className="relative rounded-[54px] p-[3.5px] bg-gradient-to-b from-[#8a8a8a] via-[#4a4a4a] to-[#7a7a7a] shadow-[0_30px_80px_rgba(0,0,0,0.75),0_0_0_1px_rgba(255,255,255,0.05)]">
+                  {/* Polished edge highlight */}
+                  <div className="rounded-[52px] p-[1.5px] bg-gradient-to-b from-[#3a3a3a] to-[#1a1a1a]">
+                    {/* Screen */}
+                    <div className="relative rounded-[50px] overflow-hidden bg-black">
+                      {/* Dynamic Island */}
+                      <div className="absolute top-[14px] left-1/2 -translate-x-1/2 w-[104px] h-[32px] bg-black rounded-full z-20 shadow-[inset_0_0_4px_rgba(255,255,255,0.08)] flex items-center justify-end pr-[12px]">
+                        <div className="w-[9px] h-[9px] rounded-full bg-[#0d1117] ring-1 ring-[#1a1f2e]" />
+                      </div>
+
+                      {/* App screenshot */}
+                      <img
+                        src="/nextplate.png"
+                        alt="Nekstpei App"
+                        className="w-full block"
+                      />
+
+                      {/* Glass reflection */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-transparent pointer-events-none rounded-[50px]" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
