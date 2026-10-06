@@ -49,32 +49,13 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right: App Mockup */}
+          {/* Right: App UI */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[520px]">
-              {/* Soft glow behind */}
-              <div className="absolute -inset-6 bg-[rgb(0,131,208)]/6 rounded-3xl blur-2xl" />
-
-              {/* Browser-style frame */}
-              <div className="relative rounded-2xl overflow-hidden border border-white/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
-                {/* Browser bar */}
-                <div className="flex items-center gap-2 px-4 py-3 bg-[#111] border-b border-white/[0.06]">
-                  <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
-                  <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
-                  <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-                  <div className="ml-3 flex-1 px-3 py-1 rounded-md bg-white/[0.04] text-[11px] text-gray-500 truncate">
-                    app.nekstpei.com
-                  </div>
-                </div>
-
-                {/* Screenshot */}
-                <img
-                  src="/nextplate.png"
-                  alt="Nekstpei App"
-                  className="w-full block"
-                />
-              </div>
-            </div>
+            <img
+              src="/nextplate.png"
+              alt="Nekstpei App"
+              className="w-full max-w-[480px]"
+            />
           </div>
         </div>
       </div>
