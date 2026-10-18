@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className="nexr-container flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-xl font-bold text-white tracking-tight" style={{ fontFamily: 'Sora' }}>
-            nekst<span style={{ color: 'rgb(0,131,208)' }}>pei</span>
+            Next<span style={{ color: 'rgb(0,131,208)' }}>plate</span>
           </span>
         </Link>
 

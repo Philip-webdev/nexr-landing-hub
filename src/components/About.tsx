@@ -43,7 +43,7 @@ const About = () => {
 
             <p className="text-gray-500 text-base leading-relaxed mb-10 max-w-lg">
               Money is easy to transfer, but senders often cannot ensure that funds intended for food are used for food. 
-              Nekstpei creates a digital food-value layer between money and physical food.
+              Nextplate creates a digital food-value layer between money and physical food.
             </p>
 
             <div className="space-y-6">

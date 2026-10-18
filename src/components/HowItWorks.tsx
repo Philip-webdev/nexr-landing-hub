@@ -5,7 +5,7 @@ const steps = [
     num: '01',
     icon: <Wallet size={20} style={{ color: 'rgb(0,131,208)' }} />,
     title: 'Fund your wallet',
-    desc: 'Load food credits to your Nekstpei wallet. Start with as little as ₦1,000.',
+    desc: 'Load food credits to your Nextplate wallet. Start with as little as ₦1,000.',
   },
   {
     num: '02',

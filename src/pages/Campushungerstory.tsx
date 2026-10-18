@@ -183,7 +183,7 @@ function ChapterOpening() {
         {/* brand pill */}
         <div style={{ ...fade(v, 0), display: "inline-flex", alignItems: "center", gap: ".5rem", background: B.blueA(.1), border: `1px solid ${B.blueA(.2)}`, borderRadius: 999, padding: ".35rem 1rem", marginBottom: "2rem" }}>
           <div style={{ width: 6, height: 6, borderRadius: "50%", background: B.blue, animation: "dot-pulse 2s ease-in-out infinite" }} />
-          <span style={{ fontFamily: B.sans, fontSize: ".68rem", fontWeight: 700, letterSpacing: ".15em", textTransform: "uppercase", color: B.blue }}>nekstpei</span>
+          <span style={{ fontFamily: B.sans, fontSize: ".68rem", fontWeight: 700, letterSpacing: ".15em", textTransform: "uppercase", color: B.blue }}>Nextplate</span>
         </div>
 
         <h1 style={{ ...fade(v, .1), fontFamily: B.sans, fontWeight: 900, fontSize: mob ? "clamp(2.4rem,11vw,3.5rem)" : "clamp(3rem,9vw,6.5rem)", lineHeight: 1.02, letterSpacing: "-.03em", color: "#fff", marginBottom: "1.5rem" }}>
@@ -333,7 +333,7 @@ function ChapterCost() {
 /* ═══════════════════════════════════════════════════════════════════
    CH 4  DIASPORA MEAL GIFTING  ← completely rewritten
    Story: select a food package → send it like a gift card
-          → nekstpei processes → meal delivered on campus
+          → Nextplate processes → meal delivered on campus
 ═══════════════════════════════════════════════════════════════════ */
 
 /* ── Step SVG icons — 22px, stroke-based, currentColor ── */
@@ -402,8 +402,8 @@ const IconHeart = () => (
 
 const FLOW_STEPS: FlowStep[] = [
   { icon: <IconMenu />,  label: "Select a meal package",   detail: "Browse curated, vendor-verified meal packages — daily plans, weekly nourish packs, study-season bundles — all priced in local campus currency." },
-  { icon: <IconGift />,  label: "Send it like a gift card", detail: "Choose your recipient, write a personal message and send. No bank transfer, no currency headache — nekstpei bridges the gap for you." },
-  { icon: <IconZap />,   label: "nekstpei processes it",   detail: "We coordinate directly with the verified campus vendor. The meal is confirmed, freshly prepared and queued for delivery — zero middlemen." },
+  { icon: <IconGift />,  label: "Send it like a gift card", detail: "Choose your recipient, write a personal message and send. No bank transfer, no currency headache — Nextplate bridges the gap for you." },
+  { icon: <IconZap />,   label: "Nextplate processes it",   detail: "We coordinate directly with the verified campus vendor. The meal is confirmed, freshly prepared and queued for delivery — zero middlemen." },
   { icon: <IconTruck />, label: "Meal delivered on campus", detail: "Your person gets a notification, picks up or receives their meal at the hall. You get a delivery confirmation. They ate today — because of you." },
 ];
 
@@ -441,7 +441,7 @@ function FlipGiftCard({ card, v, d }: { card: GiftCard; v: boolean; d: number })
           {/* header row */}
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1.4rem" }}>
             <div>
-              <p style={{ fontFamily: B.sans, fontSize: ".58rem", fontWeight: 800, letterSpacing: ".18em", textTransform: "uppercase", color: B.blue, marginBottom: ".25rem" }}>nekstpei meal gift</p>
+              <p style={{ fontFamily: B.sans, fontSize: ".58rem", fontWeight: 800, letterSpacing: ".18em", textTransform: "uppercase", color: B.blue, marginBottom: ".25rem" }}>Nextplate meal gift</p>
               <p style={{ fontFamily: B.sans, fontWeight: 700, fontSize: ".92rem", color: "#fff", lineHeight: 1.3 }}>{card.meal}</p>
             </div>
             <div style={{ background: B.blueA(.12), borderRadius: 8, padding: ".55rem", display: "flex", alignItems: "center", justifyContent: "center", color: B.blue }}>
@@ -513,7 +513,7 @@ function ChapterDiaspora() {
             Your mum would cook<br />if she could.<br /><em style={{ color: B.blue }}>Now she can.</em>
           </h2>
           <p style={{ fontFamily: B.sans, fontWeight: 300, fontSize: mob ? ".95rem" : "1.05rem", color: "rgba(255,255,255,.5)", lineHeight: 1.85, maxWidth: 580 }}>
-            A parent in London. A student in Lagos. nekstpei lets anyone send not money — but an actual meal, to an actual campus, on an actual day. No transfer stress. No guessing if it arrived. Just food.
+            A parent in London. A student in Lagos. Nextplate lets anyone send not money — but an actual meal, to an actual campus, on an actual day. No transfer stress. No guessing if it arrived. Just food.
           </p>
         </div>
 
@@ -640,7 +640,7 @@ function ChapterVision() {
               UN SDG Goal 2 calls for Zero Hunger by 2030. Governments are behind. NGOs are stretched. The infrastructure has to come from the ground up — from campuses, families, and technology built specifically for this problem.
             </p>
             <p style={{ fontFamily: B.sans, fontWeight: 700, fontSize: "1rem", color: "#1A1A1A", lineHeight: 1.7 }}>
-              That is what <span style={{ color: B.blue }}>nekstpei</span> is built to do.
+              That is what <span style={{ color: B.blue }}>Nextplate</span> is built to do.
             </p>
           </div>
         </div>

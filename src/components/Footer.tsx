@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <span className="text-xl font-bold text-white tracking-tight" style={{ fontFamily: 'Sora' }}>
-              nekst<span style={{ color: 'rgb(0,131,208)' }}>pei</span>
+              Next<span style={{ color: 'rgb(0,131,208)' }}>plate</span>
             </span>
             <p className="text-sm text-gray-600 mt-4 leading-relaxed max-w-xs">
               Send food, not just money. A digital food-value network connecting people, vendors, and communities.
@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-white/[0.04] mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-gray-700">
-            &copy; {new Date().getFullYear()} Nekstpei. All rights reserved.
+            &copy; {new Date().getFullYear()} Nextplate. All rights reserved.
           </p>
           <div className="flex gap-5">
             <a href="#" className="text-xs text-gray-700 hover:text-gray-400 transition-colors">Terms</a>

@@ -77,7 +77,7 @@ const Hero = () => {
                       {/* App screenshot */}
                       <img
                         src="/nextplate.png"
-                        alt="Nekstpei App"
+                        alt="Nextplate App"
                         className="w-full block"
                       />
 
