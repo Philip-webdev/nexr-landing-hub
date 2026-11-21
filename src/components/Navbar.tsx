@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const navLinks = [
+  { label: 'Ecosystem', href: '#ecosystem' },
   { label: 'Features', href: '#features' },
   { label: 'How it Works', href: '#how-it-works' },
+  { label: 'Vendors', href: '#vendors' },
   { label: 'About', href: '#about' },
 ];
 
@@ -22,14 +24,17 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-[#06090f]/80 backdrop-blur-xl border-b border-white/[0.04] py-3'
+          ? 'bg-black/85 backdrop-blur-xl border-b border-white/[0.06] py-3'
           : 'bg-transparent py-5'
       }`}
     >
       <div className="nexr-container flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-bold text-white tracking-tight" style={{ fontFamily: 'Sora' }}>
-            Next<span style={{ color: 'rgb(0,131,208)' }}>plate</span>
+        <Link to="/" className="flex items-center gap-2 group">
+          <span className="text-xl font-bold tracking-tight text-white" style={{ fontFamily: 'Orbitron' }}>
+            Next
+            <span className="ml-0.5 inline-block align-middle bg-white text-black px-2 py-0.5 transition-colors duration-500 group-hover:text-[#0083D0]">
+              plate
+            </span>
           </span>
         </Link>
 
@@ -39,7 +44,7 @@ const Navbar = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-gray-400 hover:text-white transition-colors duration-300 link-underline"
+              className="text-sm text-[#BFBFBF] hover:text-white transition-colors duration-300 link-underline"
             >
               {link.label}
             </a>
@@ -64,13 +69,13 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[#06090f]/95 backdrop-blur-2xl border-b border-white/[0.06]">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-black/95 backdrop-blur-2xl border-b border-white/[0.06]">
           <div className="nexr-container flex flex-col gap-1 py-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-gray-400 hover:text-white hover:bg-white/[0.03] transition-all px-4 py-3 rounded-lg"
+                className="text-sm text-[#BFBFBF] hover:text-white hover:bg-white/[0.03] transition-all px-4 py-3 rounded-lg"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}

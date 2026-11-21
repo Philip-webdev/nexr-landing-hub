@@ -67,11 +67,22 @@ export default {
 					'brand': '#0083D0',
 					'dark-blue': '#0A2342',
 					'blue': '#0083D0',
-					'teal': '#2CA6A4',
+					'teal': '#00B4D8',
 					'light-teal': '#81C3D7',
 					'surface': '#0d1117',
 					'surface-light': '#161b22',
 					'border': '#21262d',
+				},
+				np: {
+					'ink': '#000000',
+					'surface': '#0A0A0A',
+					'indigo': '#0D0D0D',
+					'blue': '#0083D0',
+					'cyan': '#00B4D8',
+					'deep': '#0077B6',
+					'violet': '#4C7DFF',
+					'cream': '#FFFFFF',
+					'muted': '#8A8A8A',
 				}
 			},
 			borderRadius: {
@@ -131,11 +142,11 @@ export default {
 				'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
 				'shimmer': 'shimmer 3s ease-in-out infinite',
 			},
-      fontFamily: {
-        'sans': ['Sora', 'sans-serif'],
-        'display': ['Sora', 'sans-serif'],
-        'mono': ['SF Mono', 'monospace']
-      }
+			fontFamily: {
+				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Orbitron', 'Inter', 'sans-serif'],
+				'mono': ['SF Mono', 'monospace']
+			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

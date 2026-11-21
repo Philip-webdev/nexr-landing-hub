@@ -1,14 +1,17 @@
 import { useEffect, useRef, useState } from 'react';
-import { TrendingUp, Users, Globe, Heart } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+import { TrendingUp, Users, Heart, Activity } from 'lucide-react';
 
 interface StatItemProps {
-  icon: React.ReactNode;
+  icon: LucideIcon;
   value: string;
   label: string;
   suffix?: string;
+  accent: string;
+  fill: number;
 }
 
-const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
+const StatItem = ({ icon: Icon, value, label, suffix = '', accent, fill }: StatItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [displayValue, setDisplayValue] = useState('0');
   const hasAnimated = useRef(false);
@@ -56,51 +59,89 @@ const StatItem = ({ icon, value, label, suffix = '' }: StatItemProps) => {
   };
 
   return (
-    <div ref={ref} className="text-center space-y-3">
-      <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/[0.04] border border-white/[0.06] mb-2">
-        {icon}
+    <div ref={ref} className="text-left space-y-3.5">
+      <div
+        className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-1"
+        style={{ background: `${accent}14`, border: `1px solid ${accent}33` }}
+      >
+        <Icon size={19} style={{ color: accent }} />
       </div>
-      <div className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-        {displayValue}{suffix}
+
+      <div>
+        <span
+          className="text-3xl sm:text-4xl font-bold tracking-tight"
+          style={{ fontFamily: 'Orbitron', color: accent }}
+        >
+          {displayValue}
+        </span>
+        <span className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          {suffix}
+        </span>
       </div>
-      <div className="text-sm text-gray-500">{label}</div>
+
+      <div className="stat-bar">
+        <div
+          className="stat-bar-fill"
+          style={{ '--w': `${fill}%`, background: `linear-gradient(90deg, ${accent}, ${accent}55)` } as React.CSSProperties}
+        />
+      </div>
+
+      <div className="text-sm text-[#BFBFBF] leading-snug">{label}</div>
     </div>
   );
 };
 
 const stats: StatItemProps[] = [
   {
-    icon: <Heart size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    icon: Heart,
     value: '73',
     suffix: '%',
     label: 'of African students skip meals during term',
+    accent: '#FFFFFF',
+    fill: 73,
   },
   {
-    icon: <Users size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    icon: Users,
     value: '30.6',
     suffix: 'M',
-    label: 'Nigerians facing food insecurity',
+    label: 'Nigerians facing food insecurity today',
+    accent: '#FFFFFF',
+    fill: 64,
   },
   {
-    icon: <Globe size={20} style={{ color: 'rgb(0,131,208)' }} />,
-    value: '36',
-    suffix: '%',
-    label: 'of European students report food insecurity',
-  },
-  {
-    icon: <TrendingUp size={20} style={{ color: 'rgb(0,131,208)' }} />,
+    icon: TrendingUp,
     value: '1',
     suffix: ' in 3',
     label: 'Nigerian students went a full day without eating',
+    accent: '#FFFFFF',
+    fill: 33,
+  },
+  {
+    icon: Activity,
+    value: '100',
+    suffix: '%',
+    label: 'of food value tracked — from wallet to plate',
+    accent: '#FFFFFF',
+    fill: 100,
   },
 ];
 
 const Stats = () => {
   return (
     <section className="section-padding relative">
-      <div className="section-divider mb-16" />
-
       <div className="nexr-container">
+        <div className="text-center max-w-2xl mx-auto mb-14" data-reveal>
+          <span className="eyebrow">The reality</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mt-6 mb-4 text-balance">
+            A continental problem,{' '}
+            <span className="text-white">worth an ecosystem</span>
+          </h2>
+          <p className="text-[#BFBFBF] text-base leading-relaxed">
+            Food insecurity across Africa isn't a messaging problem — it's a
+            infrastructure problem. We're building the network that closes the gap.
+          </p>
+        </div>
+
         <div
           className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12"
           data-reveal

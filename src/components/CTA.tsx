@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 
 const CTA = () => {
   return (
@@ -8,20 +8,26 @@ const CTA = () => {
       <div className="nexr-container">
         <div
           data-reveal="scale"
-          className="relative rounded-3xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm overflow-hidden"
+          className="relative rounded-3xl border border-white/[0.07] bg-[#0A0A0A]/70 backdrop-blur-sm overflow-hidden"
         >
-          {/* Background glow */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(0,131,208,0.08),transparent_60%)]" />
+          {/* Background glows */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_0%,rgba(255,255,255,0.14),transparent_60%),radial-gradient(ellipse_at_80%_100%,rgba(23,192,139,0.12),transparent_60%)] pointer-events-none" />
+          {/* Adinkra-inspired texture */}
+          <div className="absolute inset-0 adinkra-pattern opacity-[0.05] pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-72 h-72 rounded-none bg-[#FFFFFF]/10 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-none bg-[#FFFFFF]/10 blur-3xl" />
 
           <div className="relative px-8 py-16 sm:px-16 sm:py-20 text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-5 text-balance leading-tight">
+            <span className="eyebrow">Join the ecosystem</span>
+
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mt-6 mb-5 text-balance leading-tight" style={{ fontFamily: 'Orbitron' }}>
               Send food,<br />
-              <span style={{ color: 'rgb(0,131,208)' }}>not just money.</span>
+              <span className="text-white">not just money.</span>
             </h2>
 
-            <p className="text-gray-500 text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-              Join thousands of families and students who ensure their loved ones eat well.
-              No transfer fees. No currency stress. Just food.
+            <p className="text-[#BFBFBF] text-base sm:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+              Join thousands of families and students who ensure their loved ones
+              eat well. No transfer fees. No currency stress. Just food.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -33,15 +39,18 @@ const CTA = () => {
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a
-                href="#about"
-                className="btn-outline inline-flex items-center justify-center text-base px-8 py-3.5"
+                href="https://wa.me/2348139305671"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline inline-flex items-center justify-center gap-2 text-base px-8 py-3.5"
               >
-                Learn more
+                <MessageCircle size={16} />
+                Talk to us
               </a>
             </div>
 
-            <p className="text-xs text-gray-600 mt-6">
-              Food value, made digital. Built for Africa.
+            <p className="text-xs text-[#8A8A8A] mt-6">
+              The agentic ecosystem for food vending. Built for Africa.
             </p>
           </div>
         </div>
