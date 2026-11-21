@@ -53,7 +53,7 @@ const Navbar = () => {
             href="https://app.nekstpei.com/#/welcome"
             className="btn-primary text-sm"
           >
-            Get Started
+            Become a Citizen
           </a>
         </div>
 
@@ -86,7 +86,7 @@ const Navbar = () => {
               className="btn-primary text-sm text-center mt-2"
               onClick={() => setMobileOpen(false)}
             >
-              Get Started
+              Become a Citizen
             </a>
           </div>
         </div>

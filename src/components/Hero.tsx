@@ -51,7 +51,7 @@ const Hero = () => {
 
             <div className="hero-fade flex flex-row flex-nowrap gap-2.5 sm:gap-3 pt-2 justify-center lg:justify-start" style={{ animationDelay: '1.05s' }}>
               <a href="https://app.nekstpei.com/#/welcome" className="btn-primary flex items-center justify-center gap-2 group whitespace-nowrap px-4 sm:px-6 text-sm sm:text-[0.95rem]">
-                Get started
+                Become a Citizen
                 <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
               </a>
               <a href="https://app.nekstpei.com/#/vendor" className="btn-outline flex items-center justify-center whitespace-nowrap px-4 sm:px-6 text-sm sm:text-[0.95rem]">
