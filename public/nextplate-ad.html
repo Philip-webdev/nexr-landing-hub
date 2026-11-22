@@ -9,94 +9,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet" />
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { width: 1080px; height: 1080px; overflow: hidden; }
-  body {
-    background: #000000;
-    color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    position: relative;
-    -webkit-font-smoothing: antialiased;
+  html, body { width: 1080px; height: 1350px; overflow: hidden; }
+  body { background: #000; font-family: 'Inter', sans-serif; color: #fff; position: relative; -webkit-font-smoothing: antialiased; }
+
+  .bg {
+    position: absolute; inset: 0;
+    background-image: url('/african-vend.jfif');
+    background-size: cover;
+    background-position: center 30%;
   }
-  .bg-glow {
-    position: absolute; inset: 0; pointer-events: none;
+  .overlay {
+    position: absolute; inset: 0;
     background:
-      radial-gradient(60% 45% at 12% 8%, rgba(0,131,208,0.22), transparent 70%),
-      radial-gradient(50% 40% at 90% 90%, rgba(0,180,216,0.16), transparent 70%);
+      linear-gradient(to top, rgba(0,0,0,0.94) 0%, rgba(0,0,0,0.55) 34%, rgba(0,0,0,0.05) 62%, rgba(0,0,0,0.35) 100%);
   }
-  .pattern {
-    position: absolute; inset: 0; pointer-events: none; opacity: 0.06;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='1'%3E%3Ccircle cx='36' cy='36' r='9'/%3E%3Crect x='30.5' y='30.5' width='11' height='11' transform='rotate(45 36 36)'/%3E%3Cpath d='M36 6v12M36 54v12M6 36h12M54 36h12'/%3E%3C/g%3E%3C/svg%3E");
-  }
-  .wrap { position: relative; padding: 72px 80px; height: 100%; display: flex; flex-direction: column; }
+  .content { position: absolute; inset: 0; padding: 72px 76px; display: flex; flex-direction: column; justify-content: space-between; }
 
-  /* top bar */
-  .top { display: flex; align-items: center; justify-content: space-between; }
-  .logo { display: flex; align-items: baseline; font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em; }
+  .logo { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 40px; letter-spacing: -0.02em; display: flex; align-items: baseline; }
   .logo .plate { background: #fff; color: #000; padding: 2px 14px; margin-left: 4px; font-weight: 800; }
-  .badge { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(255,255,255,0.16); padding: 12px 20px; font-size: 15px; letter-spacing: 0.2em; font-weight: 600; color: #e6e6e6; }
-  .badge .dot { width: 8px; height: 8px; border-radius: 50%; background: #0083d0; box-shadow: 0 0 12px #0083d0; }
 
-  /* headline */
-  .head { margin-top: 72px; }
-  .kicker { font-family: 'Inter', sans-serif; font-weight: 700; letter-spacing: 0.34em; font-size: 22px; color: #8a8a8a; text-transform: uppercase; }
-  h1 { font-family: 'Orbitron', sans-serif; font-weight: 800; font-size: 118px; line-height: 1.0; letter-spacing: -0.015em; margin-top: 26px; }
-  h1 .accent { background: linear-gradient(135deg, #00b4d8, #0083d0); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .sub { margin-top: 34px; font-size: 34px; line-height: 1.45; color: #bfbfbf; max-width: 860px; font-weight: 400; }
-  .sub b { color: #ffffff; font-weight: 600; }
+  .bottom { max-width: 940px; }
+  .kicker { display: flex; align-items: center; gap: 14px; font-size: 20px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; color: #e8e8e8; }
+  .kicker .dot { width: 9px; height: 9px; border-radius: 50%; background: #fff; box-shadow: 0 0 14px rgba(255,255,255,0.6); }
 
-  /* price tags */
-  .tags { margin-top: 64px; display: flex; gap: 22px; }
-  .tag { flex: 1; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.03); padding: 26px 28px; }
-  .tag .lbl { font-size: 16px; letter-spacing: 0.16em; text-transform: uppercase; color: #8a8a8a; font-weight: 600; }
-  .tag .price { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 56px; margin-top: 10px; }
-  .tag.hi .price { color: #6e6e6e; text-decoration: line-through; text-decoration-color: rgba(255,255,255,0.4); }
-  .tag.best { border-color: rgba(0,131,208,0.6); background: rgba(0,131,208,0.08); }
-  .tag.best .price { color: #00b4d8; }
-  .tag .sub2 { font-size: 17px; color: #8a8a8a; margin-top: 6px; }
+  h1 { font-family: 'Orbitron', sans-serif; font-weight: 800; font-size: 100px; line-height: 1.04; letter-spacing: -0.015em; margin-top: 26px; color: #fff; }
 
-  /* cta */
-  .cta-row { margin-top: auto; display: flex; align-items: center; justify-content: space-between; }
-  .cta { display: inline-flex; align-items: center; gap: 14px; background: #ffffff; color: #000000; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 28px; padding: 26px 40px; }
-  .cta .arrow { font-size: 30px; }
-  .url { font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 24px; color: #00b4d8; letter-spacing: 0.02em; }
+  .sub { margin-top: 26px; font-size: 34px; line-height: 1.4; color: #d9d9d9; font-weight: 400; }
+
+  .cta-row { margin-top: 44px; display: flex; align-items: center; gap: 28px; }
+  .cta { display: inline-flex; align-items: center; gap: 14px; background: #ffffff; color: #000; font-weight: 700; font-size: 28px; padding: 24px 38px; }
+  .url { font-family: 'Orbitron', sans-serif; font-weight: 600; font-size: 26px; color: #ffffff; letter-spacing: 0.02em; }
 </style>
 </head>
 <body>
-  <div class="bg-glow"></div>
-  <div class="pattern"></div>
-  <div class="wrap">
-    <div class="top">
-      <div class="logo">Next<span class="plate">plate</span></div>
-      <div class="badge"><span class="dot"></span>CALLING ALL FOOD VENDORS</div>
-    </div>
+  <div class="bg"></div>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="logo">Next<span class="plate">plate</span></div>
 
-    <div class="head">
-      <div class="kicker">We connect citizens to better prices</div>
-      <h1>Sell food at<br><span class="accent">YOUR price.</span></h1>
-      <div class="sub">List your food commodities on <b>Nextplate</b> and reach citizens ready to buy at prices that work for everyone — <b>vendor to consumer, direct.</b></div>
-    </div>
-
-    <div class="tags">
-      <div class="tag hi">
-        <div class="lbl">Market price</div>
-        <div class="price">₦1,800</div>
-        <div class="sub2">middlemen &amp; markup</div>
+    <div class="bottom">
+      <div class="kicker"><span class="dot"></span>Call for food vendors</div>
+      <h1>Sell food at<br>a fairer price.</h1>
+      <div class="sub">We connect vendors to citizens with better food prices.</div>
+      <div class="cta-row">
+        <span class="cta">Become a vendor <span>→</span></span>
+        <span class="url">thenextplate.xyz</span>
       </div>
-      <div class="tag best">
-        <div class="lbl">Your price</div>
-        <div class="price">₦1,300</div>
-        <div class="sub2">you set it · we match buyers</div>
-      </div>
-      <div class="tag hi">
-        <div class="lbl">Market price</div>
-        <div class="price">₦950</div>
-        <div class="sub2">hidden fees</div>
-      </div>
-    </div>
-
-    <div class="cta-row">
-      <span class="cta">Become a vendor <span class="arrow">→</span></span>
-      <span class="url">app.nekstpei.com/#/vendor</span>
     </div>
   </div>
 </body>

@@ -14,8 +14,8 @@ const CTA = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_0%,rgba(255,255,255,0.14),transparent_60%),radial-gradient(ellipse_at_80%_100%,rgba(23,192,139,0.12),transparent_60%)] pointer-events-none" />
           {/* Adinkra-inspired texture */}
           <div className="absolute inset-0 adinkra-pattern opacity-[0.05] pointer-events-none" />
-          <div className="absolute -top-24 -right-24 w-72 h-72 rounded-none bg-[#FFFFFF]/10 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-none bg-[#FFFFFF]/10 blur-3xl" />
+          <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-[#FFFFFF]/10 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full bg-[#FFFFFF]/10 blur-3xl" />
 
           <div className="relative px-8 py-16 sm:px-16 sm:py-20 text-center">
             <span className="eyebrow">Join the ecosystem</span>
@@ -32,7 +32,7 @@ const CTA = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="https://app.nekstpei.com/#/welcome"
+                href="https://thenextplate.xyz"
                 className="btn-primary inline-flex items-center justify-center gap-2 text-base px-8 py-3.5 group"
               >
                 Get started with ₦1,000

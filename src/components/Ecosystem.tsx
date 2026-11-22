@@ -109,7 +109,7 @@ const FlowVisual = () => (
             <p className="text-xs text-[#BFBFBF] truncate">{row.sub}</p>
           </div>
           {i === 3 && (
-            <span className="flex items-center gap-1 text-[10px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-2 py-1 rounded-none flex-shrink-0">
+            <span className="flex items-center gap-1 text-[10px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-2 py-1 rounded-full flex-shrink-0">
               <Check size={10} /> Done
             </span>
           )}
@@ -141,7 +141,7 @@ const BudgetVisual = () => {
             ₦10,000 <span className="text-sm font-medium text-[#BFBFBF]">· 5 days</span>
           </p>
         </div>
-        <span className="flex items-center gap-1.5 text-[11px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-3 py-1.5 rounded-none">
+        <span className="flex items-center gap-1.5 text-[11px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-3 py-1.5 rounded-full">
           <Sparkles size={12} /> AI plan ready
         </span>
       </div>
@@ -153,7 +153,7 @@ const BudgetVisual = () => {
               className="bar-grow w-full rounded-t-lg"
               style={{
                 height: `${day.h}%`,
-                background: 'linear-gradient(180deg, #FFFFFF, #FFFFFF)',
+                background: 'linear-gradient(180deg, #00B4D8, #0083D0)',
                 animationDelay: `${0.15 + i * 0.1}s`,
                 boxShadow: '0 0 16px rgba(255,255,255,0.25)',
               }}
@@ -180,7 +180,7 @@ const AgentVisual = () => (
           48 <span className="text-sm font-medium text-[#FFFFFF]">+18% ↗</span>
         </p>
       </div>
-      <span className="flex items-center gap-1.5 text-[11px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-3 py-1.5 rounded-none">
+      <span className="flex items-center gap-1.5 text-[11px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-3 py-1.5 rounded-full">
         <Bot size={12} /> Agents live
       </span>
     </div>
@@ -222,7 +222,7 @@ const AgentVisual = () => (
         >
           <span className="text-xs text-gray-300 truncate">{row.order}</span>
           <span
-            className="text-[10px] font-semibold px-2 py-0.5 rounded-none flex-shrink-0"
+            className="text-[10px] font-semibold px-2 py-0.5 rounded-full flex-shrink-0"
             style={{ color: row.color, background: `${row.color}14`, border: `1px solid ${row.color}33` }}
           >
             {row.status}
@@ -272,9 +272,9 @@ const ProgramVisual = () => {
                 <span className="text-[#BFBFBF]">{row.label}</span>
                 <span className="text-white font-semibold">{row.pct}</span>
               </div>
-              <div className="h-1.5 rounded-none bg-white/[0.07] overflow-hidden">
+              <div className="h-1.5 rounded-full bg-white/[0.07] overflow-hidden">
                 <div
-                  className="h-full rounded-none"
+                  className="h-full rounded-full"
                   style={{
                     width: row.pct,
                     background: `linear-gradient(90deg, ${row.color}, ${row.color}66)`,
@@ -353,11 +353,11 @@ const Ecosystem = () => {
                   key={t.id}
                   onClick={() => setActive(t.id)}
                   className={`relative flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    isActive ? 'text-black shadow-[0_6px_20px_rgba(255,255,255,0.2)]' : 'text-[#BFBFBF] hover:text-white'
+                    isActive ? 'text-white shadow-[0_6px_20px_rgba(0,131,208,0.35)]' : 'text-[#BFBFBF] hover:text-white'
                   }`}
                   style={
                     isActive
-                      ? { background: '#FFFFFF' }
+                      ? { background: '#0083D0' }
                       : undefined
                   }
                 >
@@ -400,7 +400,7 @@ const Ecosystem = () => {
               ))}
             </ul>
 
-            <a href="https://app.nekstpei.com/#/welcome" className="btn-primary inline-flex items-center gap-2 group">
+            <a href="https://thenextplate.xyz" className="btn-primary inline-flex items-center gap-2 group">
               Get started as {tab.label.toLowerCase().replace(/s$/, '')}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>

@@ -116,7 +116,7 @@ const Features = () => {
                   </div>
                   {feature.tag && (
                     <span
-                      className="text-[10px] font-semibold tracking-[0.14em] uppercase px-2.5 py-1 rounded-none"
+                      className="text-[10px] font-semibold tracking-[0.14em] uppercase px-2.5 py-1 rounded-full"
                       style={{ color: feature.accent, background: `${feature.accent}14`, border: `1px solid ${feature.accent}33` }}
                     >
                       {feature.tag}

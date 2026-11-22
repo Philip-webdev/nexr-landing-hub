@@ -96,8 +96,8 @@ const About = () => {
                 <span className="text-[10px] font-semibold tracking-[0.18em] uppercase text-[#8A8A8A]">
                   The value flow
                 </span>
-                <span className="flex items-center gap-1.5 text-[10px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-2.5 py-1 rounded-none">
-                  <span className="w-1.5 h-1.5 rounded-none bg-[#FFFFFF] animate-pulse" />
+                <span className="flex items-center gap-1.5 text-[10px] font-semibold text-[#FFFFFF] bg-[#FFFFFF]/10 border border-[#FFFFFF]/30 px-2.5 py-1 rounded-full">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FFFFFF] animate-pulse" />
                   Live
                 </span>
               </div>

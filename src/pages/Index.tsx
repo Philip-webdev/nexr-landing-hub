@@ -48,7 +48,7 @@ const VendorCarousel = () => {
                 style={{ boxShadow: `inset 0 0 0 2px ${vendor.accent}66` }} />
 
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <div className="w-8 h-0.5 rounded-none mb-3 transition-all duration-500 group-hover:w-12"
+                <div className="w-8 h-0.5 rounded-full mb-3 transition-all duration-500 group-hover:w-12"
                   style={{ background: `linear-gradient(90deg, ${vendor.accent}, transparent)` }} />
                 <h3 className="text-lg font-semibold text-white mb-1" style={{ fontFamily: 'Orbitron' }}>
                   {vendor.name}

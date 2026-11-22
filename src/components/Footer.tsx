@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="flex items-center gap-2 group">
               <span className="text-xl font-bold text-white tracking-tight" style={{ fontFamily: 'Orbitron' }}>
                 Next
-                <span className="ml-0.5 inline-block align-middle bg-white text-black px-2 py-0.5 transition-colors duration-500 group-hover:text-[#0083D0]">
+                <span className="ml-0.5 inline-block align-middle bg-[#0083D0] text-white px-2 py-0.5">
                   plate
                 </span>
               </span>

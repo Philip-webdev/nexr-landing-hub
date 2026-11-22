@@ -29,7 +29,7 @@
     --border: 0 0% 16%;
     --input: 0 0% 16%;
     --ring: 200 100% 41%;
-    --radius: 0px;
+    --radius: 0.5rem;
 
     /* Brand palette */
     --np-ink: #000000;
@@ -120,7 +120,7 @@
 
   /* ---------- Eyebrow pill ---------- */
   .eyebrow {
-    @apply inline-flex items-center gap-2.5 px-4 py-2 rounded-none border border-white/10 bg-white/[0.03] text-[11px] font-semibold tracking-[0.18em] uppercase;
+    @apply inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] text-[11px] font-semibold tracking-[0.18em] uppercase;
     color: #bfbfbf;
   }
 
@@ -150,7 +150,7 @@
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 0;
+    border-radius: 14px;
     transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
@@ -163,22 +163,23 @@
 
   /* ---------- Buttons ---------- */
   .btn-primary {
-    background: #ffffff;
-    color: #000000;
+    background: #0083d0;
+    color: #ffffff;
     padding: 0.75rem 1.5rem;
-    border-radius: 0;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    border: 1px solid #ffffff;
+    border: 1px solid #0083d0;
     position: relative;
     overflow: hidden;
-    box-shadow: none;
+    box-shadow: 0 6px 24px rgba(0, 131, 208, 0.28);
   }
 
   .btn-primary:hover {
-    background: #e6e6e6;
-    border-color: #e6e6e6;
+    background: #0096e0;
+    border-color: #0096e0;
+    box-shadow: 0 10px 32px rgba(0, 131, 208, 0.42);
     transform: translateY(-1px);
   }
 
@@ -186,7 +187,7 @@
     background: transparent;
     color: #fff;
     padding: 0.75rem 1.5rem;
-    border-radius: 0;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -607,15 +608,4 @@
   mask-image: radial-gradient(ellipse 65% 65% at 50% 50%, #000 45%, transparent 76%);
 }
 
-/* ==========================================================
-   SHARP CORNERS — remove border radius across elements
-   ========================================================== */
 
-.rounded-xl,
-.rounded-2xl,
-.rounded-3xl,
-.rounded-t-lg,
-.rounded-l-md,
-.rounded-r-md {
-  border-radius: 0 !important;
-}
