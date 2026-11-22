@@ -50,7 +50,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://thenextplate.xyz"
+            href="https://app.nekstpei.com/#/welcome"
             className="btn-primary text-sm"
           >
             Become a Citizen
@@ -82,7 +82,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="https://thenextplate.xyz"
+              href="https://app.nekstpei.com/#/welcome"
               className="btn-primary text-sm text-center mt-2"
               onClick={() => setMobileOpen(false)}
             >

@@ -400,7 +400,7 @@ const Ecosystem = () => {
               ))}
             </ul>
 
-            <a href="https://thenextplate.xyz" className="btn-primary inline-flex items-center gap-2 group">
+            <a href="https://app.nekstpei.com/#/welcome" className="btn-primary inline-flex items-center gap-2 group">
               Get started as {tab.label.toLowerCase().replace(/s$/, '')}
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>

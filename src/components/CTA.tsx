@@ -32,7 +32,7 @@ const CTA = () => {
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="https://thenextplate.xyz"
+                href="https://app.nekstpei.com/#/welcome"
                 className="btn-primary inline-flex items-center justify-center gap-2 text-base px-8 py-3.5 group"
               >
                 Get started with ₦1,000
