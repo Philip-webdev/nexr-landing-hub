@@ -12,19 +12,19 @@ const pillars: Pillar[] = [
   {
     icon: Shield,
     title: 'Transparent food value',
-    text: 'Every food credit is tracked. You see exactly where your money goes — from wallet to vendor to meal.',
+    text: 'Every food credit is tracked. You see exactly where your money goes, from wallet to vendor to meal.',
     accent: '#FFFFFF',
   },
   {
     icon: Zap,
     title: 'Agentic by default',
-    text: 'Agents handle routing, pricing, and reconciliation in the background — the ecosystem works even when you sleep.',
+    text: 'Agents handle routing, pricing, and reconciliation in the background, the ecosystem works even when you sleep.',
     accent: '#FFFFFF',
   },
   {
     icon: Eye,
     title: 'Parental visibility',
-    text: 'Parents send food credits and see exactly what their children eat — on campus or across the globe.',
+    text: 'Parents send food credits and see exactly what their children eat, on campus or across the globe.',
     accent: '#FFFFFF',
   },
   {
@@ -61,7 +61,7 @@ const About = () => {
             <p className="text-[#BFBFBF] text-base leading-relaxed mb-10 max-w-lg">
               Money is easy to transfer, but senders often cannot ensure that funds
               intended for food are used for food. Nextplate builds the agentic
-              layer between money and physical food — designed in Africa, for
+              layer between money and physical food, designed in Africa, for
               Africa's scale.
             </p>
 

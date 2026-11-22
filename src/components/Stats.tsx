@@ -120,7 +120,7 @@ const stats: StatItemProps[] = [
     icon: Activity,
     value: '100',
     suffix: '%',
-    label: 'of food value tracked — from wallet to plate',
+    label: 'of food value tracked, from wallet to plate',
     accent: '#FFFFFF',
     fill: 100,
   },
@@ -137,7 +137,7 @@ const Stats = () => {
             <span className="text-white">worth an ecosystem</span>
           </h2>
           <p className="text-[#BFBFBF] text-base leading-relaxed">
-            Food insecurity across Africa isn't a messaging problem — it's a
+            Food insecurity across Africa isn't a messaging problem, it's a
             infrastructure problem. We're building the network that closes the gap.
           </p>
         </div>

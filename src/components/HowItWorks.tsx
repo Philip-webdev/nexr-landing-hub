@@ -21,7 +21,7 @@ const steps: Step[] = [
     num: '02',
     icon: Send,
     title: 'Send food value',
-    desc: 'Transfer food credits to anyone — students, family, friends. No bank transfer stress.',
+    desc: 'Transfer food credits to anyone, students, family, friends. No bank transfer stress.',
     accent: '#FFFFFF',
   },
   {
@@ -52,7 +52,7 @@ const HowItWorks = () => {
             Four steps to <span className="text-white">food freedom</span>
           </h2>
           <p className="text-[#BFBFBF] text-base leading-relaxed">
-            From funding to eating — the whole flow is transparent, fast, and built
+            From funding to eating, the whole flow is transparent, fast, and built
             for people who want to ensure their loved ones eat well.
           </p>
         </div>

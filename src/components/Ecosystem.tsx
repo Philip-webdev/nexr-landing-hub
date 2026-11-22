@@ -49,7 +49,7 @@ const TABS: TabDef[] = [
     accent: '#FFFFFF',
     headline: 'Send with certainty',
     description:
-      'Money is easy to send — certainty is not. Fund a wallet, send food value across any distance, and watch it turn into real meals.',
+      'Money is easy to send, certainty is not. Fund a wallet, send food value across any distance, and watch it turn into real meals.',
     bullets: [
       'Fund a wallet in seconds, from anywhere',
       'Send food value to anyone, in any city',
@@ -80,7 +80,7 @@ const TABS: TabDef[] = [
       'Universities, employers, and NGOs run food-support programs with cohort dashboards and transparent reporting on every naira.',
     bullets: [
       'Dashboards for every cohort and campus',
-      'Transparent reporting — wallet to plate',
+      'Transparent reporting, wallet to plate',
       'Roll out to thousands in a single program',
     ],
   },
@@ -165,7 +165,7 @@ const BudgetVisual = () => {
 
       <div className="flex items-center gap-2 text-xs text-[#BFBFBF] bg-white/[0.03] border border-white/[0.05] rounded-lg px-3 py-2.5">
         <Check size={13} className="text-[#FFFFFF] flex-shrink-0" />
-        Plan covers 3 meals a day — no day left hungry.
+        Plan covers 3 meals a day, no day left hungry.
       </div>
     </div>
   );

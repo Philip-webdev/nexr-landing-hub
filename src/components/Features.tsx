@@ -15,7 +15,7 @@ const features: Feature[] = [
     icon: Bot,
     title: 'Agentic vendor network',
     description:
-      'Autonomous agents handle pricing, routing, and restocking for every vendor in the network — so meals scale without the manual overhead.',
+      'Autonomous agents handle pricing, routing, and restocking for every vendor in the network, so meals scale without the manual overhead.',
     accent: '#FFFFFF',
     tag: 'Core',
   },
@@ -23,21 +23,21 @@ const features: Feature[] = [
     icon: Wallet,
     title: 'Food value wallet',
     description:
-      'Load food credits, track balances, and manage your food budget all in one place — transparent from the first naira.',
+      'Load food credits, track balances, and manage your food budget all in one place, transparent from the first naira.',
     accent: '#FFFFFF',
   },
   {
     icon: Send,
     title: 'Send food, not money',
     description:
-      'Transfer food credits to students, family, or friends. They get real meals — never diverted cash.',
+      'Transfer food credits to students, family, or friends. They get real meals, never diverted cash.',
     accent: '#FFFFFF',
   },
   {
     icon: Brain,
     title: 'AI meal planning',
     description:
-      '"I have ₦10,000 for five days — what can I eat?" Our AI answers instantly, based on budget, location, and taste.',
+      '"I have ₦10,000 for five days, what can I eat?" Our AI answers instantly, based on budget, location, and taste.',
     accent: '#FFFFFF',
     tag: 'AI',
   },
@@ -88,7 +88,7 @@ const Features = () => {
             One ecosystem, <span className="text-white">every moving part</span>
           </h2>
           <p className="text-[#BFBFBF] text-base leading-relaxed">
-            From wallet to vendor to plate — a complete food-value network powered
+            From wallet to vendor to plate, a complete food-value network powered
             by agents, AI, and verified redemption. Built for students, families,
             and institutions.
           </p>
